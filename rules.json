@@ -1,0 +1,1615 @@
+{
+  "drugAliases" : {
+    "antibiotic" : [
+      "tetracycline",
+      "doxycycline",
+      "minocycline",
+      "ciprofloxacin",
+      "levofloxacin",
+      "moxifloxacin",
+      "ofloxacin",
+      "amoxicillin",
+      "augmentin",
+      "安滅菌",
+      "cephalexin",
+      "cefuroxime",
+      "cefixime",
+      "azithromycin",
+      "zithromax",
+      "日舒",
+      "clarithromycin",
+      "klaricid",
+      "erythromycin",
+      "metronidazole",
+      "flagyl",
+      "clindamycin",
+      "抗生素",
+      "penicillin"
+    ],
+    "antipsychotic" : [
+      "aripiprazole",
+      "abilify",
+      "安立復",
+      "易靜",
+      "ezole",
+      "olanzapine",
+      "zyprexa",
+      "金普薩",
+      "risperidone",
+      "risperdal",
+      "理思必妥",
+      "paliperidone",
+      "invega",
+      "思維佳",
+      "haloperidol",
+      "haldol",
+      "sulpiride",
+      "dogmatyl",
+      "amisulpride",
+      "solian",
+      "clozapine",
+      "clozaril",
+      "可致律",
+      "lurasidone",
+      "latuda",
+      "brexpiprazole",
+      "rexulti",
+      "抗精神病"
+    ],
+    "antithrombotic" : [
+      "warfarin",
+      "coumadin",
+      "可邁丁",
+      "華法林",
+      "rivaroxaban",
+      "xarelto",
+      "拜瑞妥",
+      "apixaban",
+      "eliquis",
+      "艾必克凝",
+      "dabigatran",
+      "pradaxa",
+      "普栓達",
+      "edoxaban",
+      "lixiana",
+      "里先安",
+      "clopidogrel",
+      "plavix",
+      "保栓通",
+      "ticagrelor",
+      "brilinta",
+      "百無凝",
+      "aspirin",
+      "アスピリン",
+      "阿斯匹靈",
+      "阿司匹林",
+      "伯基",
+      "bokey",
+      "抗凝血劑",
+      "抗血小板"
+    ],
+    "betaBlocker" : [
+      "propranolol",
+      "inderal",
+      "心律",
+      "恩特來",
+      "metoprolol",
+      "betaloc",
+      "倍他樂",
+      "bisoprolol",
+      "concor",
+      "康肯",
+      "atenolol",
+      "tenormin",
+      "carvedilol",
+      "dilatrend",
+      "達利全",
+      "nebivolol",
+      "nebilet"
+    ],
+    "bisphosphonate" : [
+      "alendronate",
+      "fosamax",
+      "福善美",
+      "risedronate",
+      "actonel",
+      "安妥良",
+      "ibandronate",
+      "bonviva",
+      "骨力強",
+      "雙磷酸鹽"
+    ],
+    "levodopa" : [
+      "levodopa",
+      "madopar",
+      "美道普",
+      "sinemet",
+      "心寧美",
+      "stalevo"
+    ],
+    "lithium" : [
+      "lithium",
+      "鋰鹽",
+      "碳酸鋰",
+      "camcolit",
+      "lithium carbonate",
+      "priadel",
+      "立達"
+    ],
+    "metformin" : [
+      "metformin",
+      "glucophage",
+      "庫魯化",
+      "二甲雙胍"
+    ],
+    "ppi" : [
+      "omeprazole",
+      "losec",
+      "樂酸克",
+      "esomeprazole",
+      "nexium",
+      "耐適恩",
+      "lansoprazole",
+      "takepron",
+      "泰克胃通",
+      "pantoprazole",
+      "pantoloc",
+      "保衛康",
+      "rabeprazole",
+      "pariet",
+      "百抑潰",
+      "dexlansoprazole",
+      "dexilant",
+      "得喜胃通"
+    ],
+    "raas" : [
+      "lisinopril",
+      "enalapril",
+      "ramipril",
+      "perindopril",
+      "captopril",
+      "losartan",
+      "cozaar",
+      "可悅您",
+      "valsartan",
+      "diovan",
+      "得安穩",
+      "irbesartan",
+      "olmesartan",
+      "telmisartan",
+      "micardis",
+      "必康平",
+      "candesartan",
+      "spironolactone",
+      "aldactone",
+      "安達通",
+      "eplerenone"
+    ],
+    "sedative" : [
+      "alprazolam",
+      "xanax",
+      "贊安諾",
+      "lorazepam",
+      "ativan",
+      "安定文",
+      "clonazepam",
+      "rivotril",
+      "利福全",
+      "diazepam",
+      "valium",
+      "煩寧",
+      "estazolam",
+      "eurodin",
+      "悠樂丁",
+      "flunitrazepam",
+      "rohypnol",
+      "brotizolam",
+      "lendormin",
+      "戀多眠",
+      "zolpidem",
+      "stilnox",
+      "使蒂諾斯",
+      "zopiclone",
+      "imovane",
+      "宜眠安",
+      "zaleplon",
+      "quetiapine",
+      "seroquel",
+      "思樂康",
+      "安眠藥",
+      "鎮靜劑",
+      "bzd"
+    ],
+    "ssri" : [
+      "escitalopram",
+      "lexapro",
+      "立普能",
+      "sertraline",
+      "zoloft",
+      "樂復得",
+      "fluoxetine",
+      "prozac",
+      "百憂解",
+      "paroxetine",
+      "seroxat",
+      "克憂果",
+      "fluvoxamine",
+      "luvox",
+      "無鬱寧",
+      "citalopram",
+      "cipram",
+      "venlafaxine",
+      "efexor",
+      "速悅",
+      "duloxetine",
+      "cymbalta",
+      "千憂解",
+      "desvenlafaxine",
+      "pristiq",
+      "trazodone",
+      "mesyrel",
+      "美舒鬱",
+      "mirtazapine",
+      "remeron",
+      "樂活憂",
+      "vortioxetine",
+      "brintellix",
+      "心達悅",
+      "bupropion",
+      "wellbutrin",
+      "威克倦",
+      "ssri",
+      "snri",
+      "抗憂鬱"
+    ],
+    "statin" : [
+      "atorvastatin",
+      "lipitor",
+      "立普妥",
+      "rosuvastatin",
+      "crestor",
+      "冠脂妥",
+      "simvastatin",
+      "zocor",
+      "素果",
+      "pravastatin",
+      "mevalotin",
+      "美百樂鎮",
+      "pitavastatin",
+      "livalo",
+      "力清之",
+      "statin"
+    ],
+    "tetracyclineQuinolone" : [
+      "tetracycline",
+      "doxycycline",
+      "minocycline",
+      "四環黴素",
+      "ciprofloxacin",
+      "levofloxacin",
+      "moxifloxacin",
+      "ofloxacin",
+      "cravit",
+      "可樂必妥",
+      "ciproxin",
+      "速博新",
+      "avelox",
+      "喹諾酮"
+    ],
+    "thyroid" : [
+      "levothyroxine",
+      "eltroxin",
+      "昂特欣",
+      "synthroid",
+      "thyroxine",
+      "甲狀腺素",
+      "thyrosit",
+      "euthyrox",
+      "優甲樂"
+    ],
+    "warfarin" : [
+      "warfarin",
+      "coumadin",
+      "可邁丁",
+      "華法林",
+      "warfarin鈉"
+    ]
+  },
+  "forms" : [
+    {
+      "aliases" : [
+        "菸鹼酸",
+        "nicotinicacid",
+        "nicotinic",
+        "inositolhexanicotinate",
+        "六菸鹼酸肌醇",
+        "ニコチン酸",
+        "니코틴산"
+      ],
+      "countsTowardUL" : true,
+      "key" : "b3.nicotinicAcid",
+      "note" : "菸鹼酸在每日 30 mg 上下就可能引起臉、手臂、胸口潮紅與搔癢；UL 35 mg 就是為了避免這個訂的。長期高劑量（數百 mg 以上）另有肝功能異常、血糖耐受變差的報告。",
+      "nutrientKey" : "b3",
+      "reference" : "IOM 1998 DRI；SCF 2002 對菸鹼酸另訂 UL 10 mg／日；Linus Pauling Institute",
+      "riskAboveUL" : "caution",
+      "zh" : "菸鹼酸"
+    },
+    {
+      "aliases" : [
+        "菸鹼醯胺",
+        "菸鹼胺",
+        "煙鹼醯胺",
+        "nicotinamide",
+        "niacinamide",
+        "ニコチン酸アミド",
+        "ナイアシンアミド",
+        "니코틴산아미드",
+        "나이아신아미드"
+      ],
+      "countsTowardUL" : true,
+      "key" : "b3.nicotinamide",
+      "note" : "一般不會引起菸鹼酸那種潮紅。國健署與 IOM 的 UL 35 mg 同時涵蓋兩種形式，所以數字上仍算超過；EFSA（SCF 2002）對菸鹼醯胺另訂 900 mg／日，這裡只當說明、不拿來當上限。極高劑量（每日 10 g 以上）有噁心與肝功能異常的報告。",
+      "nutrientKey" : "b3",
+      "reference" : "SCF 2002（經德國 BfR 引述）；Linus Pauling Institute",
+      "riskAboveUL" : "attention",
+      "zh" : "菸鹼醯胺"
+    },
+    {
+      "aliases" : [
+        "retinol",
+        "retinyl",
+        "視黃醇",
+        "視網醇",
+        "視黃酯",
+        "棕櫚酸視黃酯",
+        "醋酸視黃酯",
+        "レチノール",
+        "レチニル",
+        "레티놀",
+        "레티닐"
+      ],
+      "countsTowardUL" : true,
+      "key" : "vitA.preformed",
+      "note" : "UL 3000 µg RE 就是對這種形式訂的。長期超過與肝臟負擔、骨質、孕期胎兒異常風險有關。",
+      "nutrientKey" : "vitA",
+      "reference" : "IOM 2001（UL 註明只計 preformed vitamin A）；國健署 DRIs 第八版",
+      "riskAboveUL" : "caution",
+      "zh" : "視黃醇（既成維生素A）"
+    },
+    {
+      "aliases" : [
+        "β-胡蘿蔔素",
+        "beta-carotene",
+        "betacarotene",
+        "胡蘿蔔素",
+        "βカロテン",
+        "β-カロテン",
+        "ベータカロテン",
+        "베타카로틴"
+      ],
+      "conversion" : 0.16666666666666666,
+      "countsTowardUL" : false,
+      "key" : "vitA.betaCarotene",
+      "note" : "不計入維生素A的上限（IOM 註明 UL 只計既成維生素A）。攝取量以 6 µg β-胡蘿蔔素＝1 µg RE 換算。吸菸者長期服用高劑量 β-胡蘿蔔素補充劑在試驗中（ATBC、CARET）肺癌風險反而升高，請跟醫師討論。",
+      "nutrientKey" : "vitA",
+      "reference" : "IOM 2001；國健署 DRIs 第八版總表註 6",
+      "riskAboveUL" : "normal",
+      "zh" : "β-胡蘿蔔素"
+    },
+    {
+      "aliases" : [
+        "folicacid",
+        "pteroylglutamic",
+        "葉酸(folicacid)"
+      ],
+      "countsTowardUL" : true,
+      "key" : "b9.folicAcid",
+      "note" : "UL 1000 µg 是對補充劑與強化食品中的合成葉酸訂的；主要顧慮是高劑量會遮蔽維生素B12缺乏的貧血表現，延誤神經症狀的診斷。",
+      "nutrientKey" : "b9",
+      "reference" : "IOM 1998（UL 註明適用合成形式）；國健署 DRIs 第八版",
+      "riskAboveUL" : "caution",
+      "zh" : "合成葉酸"
+    },
+    {
+      "aliases" : [
+        "甲基葉酸",
+        "5-mthf",
+        "mthf",
+        "methylfolate",
+        "methyltetrahydrofolate",
+        "quatrefolic",
+        "metafolin",
+        "甲基四氫葉酸"
+      ],
+      "countsTowardUL" : true,
+      "key" : "b9.methylfolate",
+      "note" : "同樣是合成形式，比照合成葉酸計入 UL；沒有機關另訂不同的上限。",
+      "nutrientKey" : "b9",
+      "reference" : "IOM 1998；EFSA 2014 葉酸 DRV 意見",
+      "riskAboveUL" : "caution",
+      "zh" : "甲基葉酸（5-MTHF）"
+    }
+  ],
+  "nutrients" : [
+    {
+      "aliases" : [
+        "維生素a",
+        "維他命a",
+        "vitamina",
+        "retinol",
+        "視黃醇",
+        "視網醇",
+        "β-胡蘿蔔素",
+        "beta-carotene",
+        "betacarotene",
+        "胡蘿蔔素",
+        "retinylpalmitate",
+        "棕櫚酸視黃酯",
+        "retinylacetate",
+        "ビタミンa",
+        "レチノール",
+        "βカロテン",
+        "β-カロテン",
+        "ベータカロテン",
+        "비타민a",
+        "레티놀",
+        "베타카로틴"
+      ],
+      "en" : "Vitamin A",
+      "iuFactor" : 0.3,
+      "key" : "vitA",
+      "note" : "以視網醇當量（µg RE）計。上限只計既成維生素A（視黃醇及其酯）；β-胡蘿蔔素不計入上限，以 6 µg＝1 µg RE 換算進攝取量。",
+      "rda" : 600,
+      "ul" : 3000,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "µg",
+      "zh" : "維生素A"
+    },
+    {
+      "aliases" : [
+        "維生素d",
+        "維生素d3",
+        "維生素d2",
+        "維他命d",
+        "維他命d3",
+        "vitamind",
+        "vitamind3",
+        "vitamind2",
+        "cholecalciferol",
+        "膽鈣化醇",
+        "膽促鈣醇",
+        "ergocalciferol",
+        "麥角鈣化醇",
+        "d3",
+        "ビタミンd",
+        "ビタミンd3",
+        "コレカルシフェロール",
+        "비타민d",
+        "비타민d3"
+      ],
+      "en" : "Vitamin D",
+      "iuFactor" : 0.025,
+      "key" : "vitD",
+      "note" : "50 µg = 2000 IU。醫師開的高劑量療程（例如 5 萬 IU 週劑）請在設定裡自訂上限。",
+      "rda" : 10,
+      "ul" : 50,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "µg",
+      "zh" : "維生素D"
+    },
+    {
+      "aliases" : [
+        "維生素e",
+        "維他命e",
+        "vitamine",
+        "生育醇",
+        "生育酚",
+        "tocopherol",
+        "d-alpha-tocopherol",
+        "α-生育醇",
+        "alpha-tocopherol",
+        "tocopheryl",
+        "ビタミンe",
+        "トコフェロール",
+        "비타민e",
+        "토코페롤"
+      ],
+      "en" : "Vitamin E",
+      "iuFactor" : 0.67,
+      "key" : "vitE",
+      "note" : "以 α-生育醇當量（mg α-TE）計；IU 換算採天然型 1 IU = 0.67 mg。IOM 註明 UL 適用於補充劑中任何形式的 α-生育醇。",
+      "rda" : 12,
+      "ul" : 1000,
+      "ulScope" : "supplementalAndFortified",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "維生素E"
+    },
+    {
+      "aliases" : [
+        "維生素k",
+        "維生素k1",
+        "維生素k2",
+        "維他命k",
+        "vitamink",
+        "vitamink2",
+        "vitamink1",
+        "mk-7",
+        "mk7",
+        "menaquinone",
+        "phylloquinone",
+        "葉綠醌",
+        "ビタミンk",
+        "ビタミンk2",
+        "メナキノン",
+        "비타민k",
+        "비타민k2"
+      ],
+      "en" : "Vitamin K",
+      "key" : "vitK",
+      "note" : "服用抗凝血劑（warfarin）者，維生素K攝取量的變動要跟醫師討論。",
+      "rda" : 90,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "µg",
+      "zh" : "維生素K"
+    },
+    {
+      "aliases" : [
+        "維生素c",
+        "維他命c",
+        "vitaminc",
+        "抗壞血酸",
+        "ascorbicacid",
+        "ascorbate",
+        "酯化c",
+        "esterc",
+        "l-ascorbic",
+        "ビタミンc",
+        "アスコルビン酸",
+        "비타민c",
+        "아스코르브산"
+      ],
+      "en" : "Vitamin C",
+      "key" : "vitC",
+      "rda" : 100,
+      "ul" : 2000,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "維生素C"
+    },
+    {
+      "aliases" : [
+        "維生素b1",
+        "維他命b1",
+        "vitaminb1",
+        "硫胺",
+        "硫胺素",
+        "thiamin",
+        "thiamine",
+        "ビタミンb1",
+        "チアミン",
+        "비타민b1",
+        "티아민"
+      ],
+      "en" : "Thiamin",
+      "key" : "b1",
+      "rda" : 1.1,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "維生素B1"
+    },
+    {
+      "aliases" : [
+        "維生素b2",
+        "維他命b2",
+        "vitaminb2",
+        "核黃素",
+        "riboflavin",
+        "ビタミンb2",
+        "リボフラビン",
+        "비타민b2",
+        "리보플라빈"
+      ],
+      "en" : "Riboflavin",
+      "key" : "b2",
+      "rda" : 1.2,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "維生素B2"
+    },
+    {
+      "aliases" : [
+        "菸鹼素",
+        "菸鹼酸",
+        "菸鹼醯胺",
+        "維生素b3",
+        "維他命b3",
+        "vitaminb3",
+        "niacin",
+        "niacinamide",
+        "nicotinamide",
+        "nicotinicacid",
+        "ナイアシン",
+        "ニコチン酸",
+        "ニコチン酸アミド",
+        "ナイアシンアミド",
+        "나이아신",
+        "니코틴산아미드"
+      ],
+      "en" : "Niacin",
+      "key" : "b3",
+      "note" : "UL 35 mg NE 同時涵蓋菸鹼酸與菸鹼醯胺，是為了避免菸鹼酸的潮紅而訂；菸鹼醯胺一般不潮紅。IOM 註明 UL 適用於補充劑與強化食品中的合成形式。",
+      "rda" : 14,
+      "ul" : 35,
+      "ulScope" : "supplementalAndFortified",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "菸鹼素"
+    },
+    {
+      "aliases" : [
+        "泛酸",
+        "維生素b5",
+        "vitaminb5",
+        "pantothenic",
+        "pantothenate",
+        "泛酸鈣",
+        "パントテン酸",
+        "판토텐산"
+      ],
+      "en" : "Pantothenic acid",
+      "key" : "b5",
+      "rda" : 5,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "泛酸"
+    },
+    {
+      "aliases" : [
+        "維生素b6",
+        "維他命b6",
+        "vitaminb6",
+        "吡哆醇",
+        "pyridoxine",
+        "p5p",
+        "pyridoxal",
+        "ビタミンb6",
+        "ピリドキシン",
+        "비타민b6",
+        "피리독신"
+      ],
+      "en" : "Vitamin B6",
+      "key" : "b6",
+      "note" : "長期每日超過上限可能造成周邊神經病變。",
+      "rda" : 1.5,
+      "ul" : 80,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "維生素B6"
+    },
+    {
+      "aliases" : [
+        "生物素",
+        "維生素b7",
+        "維生素h",
+        "biotin",
+        "vitaminb7",
+        "ビオチン",
+        "비오틴"
+      ],
+      "en" : "Biotin",
+      "key" : "b7",
+      "note" : "高劑量生物素會干擾甲狀腺、心肌等血液檢驗，抽血前 2–3 天先停。",
+      "rda" : 30,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "µg",
+      "zh" : "生物素"
+    },
+    {
+      "aliases" : [
+        "葉酸",
+        "folate",
+        "folicacid",
+        "甲基葉酸",
+        "5-mthf",
+        "methylfolate",
+        "維生素b9",
+        "엽산"
+      ],
+      "en" : "Folate",
+      "key" : "b9",
+      "note" : "UL 針對補充劑與強化食品中的合成葉酸（含甲基葉酸），食物中的天然葉酸不計。",
+      "rda" : 400,
+      "ul" : 1000,
+      "ulScope" : "supplementalAndFortified",
+      "ulSource" : "dris",
+      "unit" : "µg",
+      "zh" : "葉酸"
+    },
+    {
+      "aliases" : [
+        "維生素b12",
+        "維他命b12",
+        "vitaminb12",
+        "鈷胺素",
+        "cobalamin",
+        "methylcobalamin",
+        "甲鈷胺",
+        "cyanocobalamin",
+        "氰鈷胺",
+        "ビタミンb12",
+        "コバラミン",
+        "비타민b12",
+        "코발라민"
+      ],
+      "en" : "Vitamin B12",
+      "key" : "b12",
+      "rda" : 2.4,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "µg",
+      "zh" : "維生素B12"
+    },
+    {
+      "aliases" : [
+        "膽鹼",
+        "膽素",
+        "choline",
+        "cholinebitartrate",
+        "コリン",
+        "콜린"
+      ],
+      "en" : "Choline",
+      "key" : "choline",
+      "rda" : 400,
+      "ul" : 3500,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "膽鹼"
+    },
+    {
+      "aliases" : [
+        "鈣",
+        "calcium",
+        "檸檬酸鈣",
+        "碳酸鈣",
+        "海藻鈣",
+        "乳酸鈣",
+        "calciumcitrate",
+        "calciumcarbonate",
+        "カルシウム",
+        "칼슘"
+      ],
+      "en" : "Calcium",
+      "key" : "ca",
+      "note" : "以「鈣離子」量計；碳酸鈣的鈣含量約 40%，包裝若寫化合物重量會高估。",
+      "rda" : 1000,
+      "ul" : 2500,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "鈣"
+    },
+    {
+      "aliases" : [
+        "磷",
+        "phosphorus",
+        "phosphate"
+      ],
+      "en" : "Phosphorus",
+      "key" : "p",
+      "rda" : 800,
+      "ul" : 4000,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "磷"
+    },
+    {
+      "aliases" : [
+        "鎂",
+        "magnesium",
+        "甘胺酸鎂",
+        "檸檬酸鎂",
+        "氧化鎂",
+        "magnesiumglycinate",
+        "magnesiumcitrate",
+        "magnesiumoxide",
+        "蘇糖酸鎂",
+        "マグネシウム",
+        "마그네슘"
+      ],
+      "en" : "Magnesium",
+      "key" : "mg",
+      "note" : "第八版（111 年修訂）UL 350 mg，總表註明為非食物性鎂量，即補充劑的量；食物裡的鎂不計。超過常見的反應是腹瀉。",
+      "rda" : 350,
+      "ul" : 350,
+      "ulScope" : "supplemental",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "鎂"
+    },
+    {
+      "aliases" : [
+        "鐵",
+        "iron",
+        "ferrous",
+        "硫酸亞鐵",
+        "甘胺酸亞鐵",
+        "血基質鐵",
+        "ferrousbisglycinate",
+        "丁烯二酸亞鐵",
+        "鉄",
+        "ヘム鉄",
+        "철분",
+        "헴철"
+      ],
+      "en" : "Iron",
+      "key" : "fe",
+      "note" : "總表註明 UL 只適用於強化食品與補充劑的總鐵量。空腹高劑量常見腸胃不適。",
+      "rda" : 12,
+      "ul" : 40,
+      "ulScope" : "supplementalAndFortified",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "鐵"
+    },
+    {
+      "aliases" : [
+        "鋅",
+        "zinc",
+        "葡萄糖酸鋅",
+        "picolinate",
+        "zincpicolinate",
+        "zincgluconate",
+        "亜鉛",
+        "아연"
+      ],
+      "en" : "Zinc",
+      "key" : "zn",
+      "rda" : 12,
+      "ul" : 35,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "鋅"
+    },
+    {
+      "aliases" : [
+        "碘",
+        "iodine",
+        "碘化鉀",
+        "potassiumiodide",
+        "海帶碘",
+        "kelp",
+        "ヨウ素",
+        "요오드"
+      ],
+      "en" : "Iodine",
+      "key" : "i",
+      "rda" : 150,
+      "ul" : 1000,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "µg",
+      "zh" : "碘"
+    },
+    {
+      "aliases" : [
+        "硒",
+        "selenium",
+        "硒酵母",
+        "selenomethionine",
+        "セレン",
+        "셀레늄",
+        "셀렌"
+      ],
+      "en" : "Selenium",
+      "key" : "se",
+      "rda" : 55,
+      "ul" : 400,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "µg",
+      "zh" : "硒"
+    },
+    {
+      "aliases" : [
+        "氟",
+        "fluoride",
+        "フッ素",
+        "불소"
+      ],
+      "en" : "Fluoride",
+      "key" : "f",
+      "rda" : 3,
+      "ul" : 10,
+      "ulScope" : "total",
+      "ulSource" : "dris",
+      "unit" : "mg",
+      "zh" : "氟"
+    },
+    {
+      "aliases" : [
+        "銅",
+        "copper",
+        "葡萄糖酸銅",
+        "구리"
+      ],
+      "en" : "Copper",
+      "key" : "cu",
+      "note" : "台灣 DRIs 未訂 UL，採美國 IOM 值。",
+      "rda" : 0.9,
+      "ul" : 10,
+      "ulScope" : "total",
+      "ulSource" : "iom",
+      "unit" : "mg",
+      "zh" : "銅"
+    },
+    {
+      "aliases" : [
+        "錳",
+        "manganese",
+        "マンガン",
+        "망간"
+      ],
+      "en" : "Manganese",
+      "key" : "mn",
+      "note" : "台灣 DRIs 未訂 UL，採美國 IOM 值。",
+      "rda" : 2.3,
+      "ul" : 11,
+      "ulScope" : "total",
+      "ulSource" : "iom",
+      "unit" : "mg",
+      "zh" : "錳"
+    },
+    {
+      "aliases" : [
+        "鉬",
+        "molybdenum",
+        "モリブデン",
+        "몰리브덴"
+      ],
+      "en" : "Molybdenum",
+      "key" : "mo",
+      "note" : "台灣 DRIs 未訂 UL，採美國 IOM 值。",
+      "rda" : 45,
+      "ul" : 2000,
+      "ulScope" : "total",
+      "ulSource" : "iom",
+      "unit" : "µg",
+      "zh" : "鉬"
+    },
+    {
+      "aliases" : [
+        "鉻",
+        "chromium",
+        "吡啶甲酸鉻",
+        "chromiumpicolinate",
+        "クロム",
+        "크롬"
+      ],
+      "en" : "Chromium",
+      "key" : "cr",
+      "rda" : 35,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "µg",
+      "zh" : "鉻"
+    },
+    {
+      "aliases" : [
+        "鉀",
+        "potassium",
+        "カリウム",
+        "칼륨"
+      ],
+      "en" : "Potassium",
+      "key" : "k",
+      "note" : "腎功能不佳者補鉀需醫師評估。",
+      "rda" : 2800,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "鉀"
+    },
+    {
+      "aliases" : [
+        "鈉",
+        "sodium",
+        "ナトリウム",
+        "나트륨"
+      ],
+      "en" : "Sodium",
+      "key" : "na",
+      "note" : "國健署建議每日鈉攝取不超過 2400 mg（約 6 g 鹽），這是建議值不是 UL。",
+      "ul" : 2400,
+      "ulScope" : "total",
+      "ulSource" : "custom",
+      "unit" : "mg",
+      "zh" : "鈉"
+    },
+    {
+      "aliases" : [
+        "epa",
+        "dha",
+        "epa+dha",
+        "epa/dha",
+        "omega-3",
+        "omega3",
+        "ω-3",
+        "二十碳五烯酸",
+        "二十二碳六烯酸",
+        "オメガ3",
+        "オメガ-3",
+        "오메가3",
+        "오메가-3"
+      ],
+      "en" : "Omega-3 (EPA+DHA)",
+      "key" : "omega3",
+      "note" : "沒有 UL。美國 FDA 建議補充品 EPA+DHA 每日不超過 2 g，EFSA 認為 5 g 以下無安全疑慮；這裡以 3000 mg 當提醒門檻。",
+      "ul" : 3000,
+      "ulScope" : "total",
+      "ulSource" : "custom",
+      "unit" : "mg",
+      "zh" : "EPA＋DHA"
+    },
+    {
+      "aliases" : [
+        "咖啡因",
+        "caffeine",
+        "無水咖啡因",
+        "カフェイン",
+        "카페인"
+      ],
+      "en" : "Caffeine",
+      "key" : "caffeine",
+      "note" : "成人常見建議每日 400 mg 以下；孕期 200 mg。",
+      "ul" : 400,
+      "ulScope" : "total",
+      "ulSource" : "custom",
+      "unit" : "mg",
+      "zh" : "咖啡因"
+    },
+    {
+      "aliases" : [
+        "葉黃素",
+        "lutein",
+        "游離型葉黃素",
+        "酯化型葉黃素",
+        "ルテイン",
+        "루테인"
+      ],
+      "en" : "Lutein",
+      "key" : "lutein",
+      "note" : "食藥署對膠囊錠狀食品的每日食用限量為 30 mg。",
+      "ul" : 30,
+      "ulScope" : "total",
+      "ulSource" : "custom",
+      "unit" : "mg",
+      "zh" : "葉黃素"
+    },
+    {
+      "aliases" : [
+        "q10",
+        "coq10",
+        "輔酵素q10",
+        "輔酶q10",
+        "ubiquinol",
+        "ubiquinone",
+        "coenzymeq10",
+        "コエンザイムq10",
+        "ユビキノール",
+        "ユビキノン",
+        "코엔자임q10",
+        "유비퀴놀"
+      ],
+      "en" : "Coenzyme Q10",
+      "key" : "coq10",
+      "note" : "食藥署對膠囊錠狀食品的每日食用限量為 30 mg。15 歲以下、孕婦、哺乳期與服用抗凝血劑者不宜。",
+      "ul" : 30,
+      "ulScope" : "total",
+      "ulSource" : "custom",
+      "unit" : "mg",
+      "zh" : "輔酵素Q10"
+    },
+    {
+      "aliases" : [
+        "益生菌",
+        "probiotic",
+        "probiotics",
+        "乳酸菌",
+        "lactobacillus",
+        "bifidobacterium",
+        "比菲德氏菌",
+        "cfu",
+        "ビフィズス菌",
+        "프로바이오틱스",
+        "유산균",
+        "비피더스"
+      ],
+      "en" : "Probiotics",
+      "key" : "probiotic",
+      "note" : "以菌數計（億 CFU），不設上限。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "億",
+      "zh" : "益生菌"
+    },
+    {
+      "aliases" : [
+        "聖約翰草",
+        "金絲桃",
+        "st.john'swort",
+        "stjohnswort",
+        "st.johnswort",
+        "hypericum",
+        "セントジョーンズワート",
+        "セイヨウオトギリソウ"
+      ],
+      "en" : "St. John's Wort",
+      "key" : "stjohnswort",
+      "note" : "與多種藥物交互作用（抗憂鬱劑、避孕藥、抗凝血劑…），正在服藥者請先問醫師。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "聖約翰草"
+    },
+    {
+      "aliases" : [
+        "5-htp",
+        "5htp",
+        "5-羥基色胺酸",
+        "色胺酸",
+        "tryptophan",
+        "l-tryptophan",
+        "トリプトファン"
+      ],
+      "en" : "5-HTP / Tryptophan",
+      "key" : "5htp",
+      "note" : "與血清素類抗憂鬱劑併用有血清素症候群風險。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "5-HTP／色胺酸"
+    },
+    {
+      "aliases" : [
+        "褪黑激素",
+        "褪黑素",
+        "melatonin",
+        "メラトニン",
+        "멜라토닌"
+      ],
+      "en" : "Melatonin",
+      "key" : "melatonin",
+      "note" : "台灣屬藥品管理。與鎮靜安眠藥作用相加。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "褪黑激素"
+    },
+    {
+      "aliases" : [
+        "銀杏",
+        "ginkgo",
+        "銀杏葉",
+        "イチョウ葉",
+        "イチョウ",
+        "은행잎"
+      ],
+      "en" : "Ginkgo",
+      "key" : "ginkgo",
+      "note" : "可能增加出血傾向，與抗凝血藥併用要告知醫師。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "銀杏"
+    },
+    {
+      "aliases" : [
+        "纈草",
+        "valerian",
+        "バレリアン",
+        "カノコソウ",
+        "발레리안"
+      ],
+      "en" : "Valerian",
+      "key" : "valerian",
+      "note" : "鎮靜作用，與安眠藥相加。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "纈草"
+    }
+  ],
+  "pairRules" : [
+    {
+      "hours" : 2,
+      "id" : "ca-fe",
+      "kind" : "separate",
+      "left" : [
+        "ca"
+      ],
+      "reason" : "鈣會明顯抑制鐵的吸收，同時吃等於白吃一部分鐵。",
+      "right" : [
+        "fe"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Iron",
+      "title" : "鈣跟鐵分開吃"
+    },
+    {
+      "hours" : 2,
+      "id" : "fe-zn",
+      "kind" : "separate",
+      "left" : [
+        "fe"
+      ],
+      "reason" : "兩者走同一條吸收路徑，空腹同時吃會互相搶。",
+      "right" : [
+        "zn"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Zinc",
+      "title" : "鐵跟鋅分開吃"
+    },
+    {
+      "hours" : 2,
+      "id" : "ca-zn",
+      "kind" : "separate",
+      "left" : [
+        "ca"
+      ],
+      "reason" : "高劑量鈣會降低鋅的吸收；一般劑量影響小，量大時分開比較保險。",
+      "right" : [
+        "zn"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Zinc",
+      "title" : "高劑量鈣跟鋅分開"
+    },
+    {
+      "hours" : 1,
+      "id" : "ca-mg",
+      "kind" : "separate",
+      "left" : [
+        "ca"
+      ],
+      "reason" : "兩者高劑量時會競爭吸收。一般劑量一起吃沒問題，量大再分。",
+      "right" : [
+        "mg"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Magnesium",
+      "title" : "高劑量鈣跟鎂錯開"
+    },
+    {
+      "hours" : 1,
+      "id" : "fe-caffeine",
+      "kind" : "separate",
+      "left" : [
+        "fe"
+      ],
+      "reason" : "咖啡、茶裡的多酚與咖啡因會大幅降低鐵的吸收，前後隔一小時。",
+      "right" : [
+        "caffeine"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Iron",
+      "title" : "鐵跟咖啡因分開"
+    },
+    {
+      "id" : "fe-vitc",
+      "kind" : "together",
+      "left" : [
+        "fe"
+      ],
+      "reason" : "維生素C 把鐵轉成好吸收的形式。兩樣都有，排同一餐比較划算。",
+      "right" : [
+        "vitC"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Iron",
+      "title" : "鐵配維生素C 吸收更好"
+    },
+    {
+      "id" : "vitd-ca",
+      "kind" : "together",
+      "left" : [
+        "vitD"
+      ],
+      "reason" : "維生素D 是鈣吸收的開關，一起吃很合理。",
+      "right" : [
+        "ca"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Calcium",
+      "title" : "維生素D 幫鈣吸收"
+    },
+    {
+      "hours" : 4,
+      "id" : "thyroid-min",
+      "kind" : "separate",
+      "left" : [
+        "drug:thyroid"
+      ],
+      "reason" : "這些礦物質會綁住甲狀腺素，讓藥效變差。藥通常早上空腹先吃，礦物質移到中午以後。",
+      "right" : [
+        "fe",
+        "mg",
+        "ca"
+      ],
+      "severity" : 2,
+      "source" : "食藥署用藥安全／NIH ODS — Calcium",
+      "title" : "甲狀腺素跟鈣、鐵、鎂至少隔 4 小時"
+    },
+    {
+      "hours" : 2,
+      "id" : "tetq-min",
+      "kind" : "separate",
+      "left" : [
+        "drug:tetracyclineQuinolone"
+      ],
+      "reason" : "四環黴素、喹諾酮類會被鈣鎂鐵鋅螯合，一起吃藥效大減。以藥師指示為準。",
+      "right" : [
+        "fe",
+        "mg",
+        "zn",
+        "ca"
+      ],
+      "severity" : 2,
+      "source" : "食藥署用藥安全／NIH ODS",
+      "title" : "這類抗生素跟礦物質至少隔 2 小時"
+    },
+    {
+      "hours" : 2,
+      "id" : "abx-probiotic",
+      "kind" : "separate",
+      "left" : [
+        "drug:antibiotic"
+      ],
+      "reason" : "抗生素會把剛吃下去的益生菌一起殺掉。療程期間可以繼續吃，但要錯開。",
+      "right" : [
+        "probiotic"
+      ],
+      "severity" : 1,
+      "source" : "台灣藥師公會用藥指導",
+      "title" : "抗生素跟益生菌隔 2–3 小時"
+    },
+    {
+      "hours" : 0.5,
+      "id" : "bisph-min",
+      "kind" : "separate",
+      "left" : [
+        "drug:bisphosphonate"
+      ],
+      "reason" : "雙磷酸鹽吸收極差，跟鈣鎂鐵一起幾乎吸收不到。早上空腹先吃藥，至少 30 分鐘後再吃別的。",
+      "right" : [
+        "mg",
+        "fe",
+        "ca"
+      ],
+      "severity" : 2,
+      "source" : "藥品仿單（Fosamax 等）",
+      "title" : "骨鬆藥要空腹單獨先吃"
+    },
+    {
+      "id" : "warf-vitk",
+      "kind" : "caution",
+      "left" : [
+        "drug:warfarin"
+      ],
+      "reason" : "維生素K 直接抵銷華法林。不是不能吃，而是每天的量要穩定、不要忽增忽減，並且讓開藥的醫師知道。",
+      "right" : [
+        "vitK"
+      ],
+      "severity" : 2,
+      "source" : "NIH ODS — Vitamin K",
+      "title" : "華法林遇到維生素K"
+    },
+    {
+      "id" : "anti-bleed",
+      "kind" : "caution",
+      "left" : [
+        "drug:antithrombotic"
+      ],
+      "reason" : "這些都會再拉長凝血時間，高劑量時出血風險上升。請告訴醫師你在吃這些。",
+      "right" : [
+        "ginkgo",
+        "omega3",
+        "vitE"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Omega-3、Vitamin E",
+      "title" : "抗凝血藥加上魚油／維生素E／銀杏"
+    },
+    {
+      "id" : "warf-coq10",
+      "kind" : "caution",
+      "left" : [
+        "drug:warfarin"
+      ],
+      "reason" : "Q10 結構類似維生素K，可能削弱華法林。要吃請先問醫師並追蹤凝血指數。",
+      "right" : [
+        "coq10"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Coenzyme Q10",
+      "title" : "華法林加 Q10"
+    },
+    {
+      "id" : "ssri-serotonin",
+      "kind" : "caution",
+      "left" : [
+        "drug:ssri"
+      ],
+      "reason" : "血清素疊加可能引發血清素症候群（心跳快、發抖、意識混亂）。這一條是「不要」，不是「分開」。先問身心科醫師。",
+      "right" : [
+        "stjohnswort",
+        "5htp"
+      ],
+      "severity" : 2,
+      "source" : "NIH NCCIH — St. John's Wort",
+      "title" : "抗憂鬱劑不要配聖約翰草、5-HTP、色胺酸"
+    },
+    {
+      "id" : "sed-melatonin",
+      "kind" : "caution",
+      "left" : [
+        "drug:sedative"
+      ],
+      "reason" : "鎮靜作用相加，白天可能昏沉、跌倒風險上升。要併用請告訴醫師。",
+      "right" : [
+        "melatonin",
+        "valerian"
+      ],
+      "severity" : 1,
+      "source" : "NIH NCCIH — Melatonin",
+      "title" : "安眠藥加褪黑激素／纈草"
+    },
+    {
+      "id" : "metformin-b12",
+      "kind" : "caution",
+      "left" : [
+        "drug:metformin"
+      ],
+      "reason" : "Metformin 長期會降低 B12 吸收。有補是好事，建議定期驗血追蹤。",
+      "right" : [
+        "b12"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Vitamin B12",
+      "title" : "長期吃 Metformin 補 B12 是合理的"
+    },
+    {
+      "id" : "statin-coq10",
+      "kind" : "caution",
+      "left" : [
+        "drug:statin"
+      ],
+      "reason" : "Statin 會降低體內 Q10，補充有人是為了減少肌肉痠痛。證據不一，但沒有明顯風險，讓醫師知道就好。",
+      "right" : [
+        "coq10"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Coenzyme Q10",
+      "title" : "Statin 配 Q10"
+    },
+    {
+      "id" : "ppi-absorb",
+      "kind" : "caution",
+      "left" : [
+        "drug:ppi"
+      ],
+      "reason" : "胃酸變少，這幾樣吸收都會變差。長期使用者補充是常見做法，定期檢驗比較安心。",
+      "right" : [
+        "ca",
+        "b12",
+        "mg"
+      ],
+      "severity" : 0,
+      "source" : "FDA Drug Safety Communication（PPI 低血鎂）",
+      "title" : "長期吃胃藥（PPI）影響 B12、鎂、鈣吸收"
+    },
+    {
+      "id" : "raas-k",
+      "kind" : "caution",
+      "left" : [
+        "drug:raas"
+      ],
+      "reason" : "ACEI、ARB、保鉀利尿劑本身就會讓血鉀升高，再補鉀可能高血鉀。補鉀前一定先問醫師。",
+      "right" : [
+        "k"
+      ],
+      "severity" : 2,
+      "source" : "NIH ODS — Potassium",
+      "title" : "這類降血壓藥加鉀要小心"
+    },
+    {
+      "hours" : 2,
+      "id" : "levodopa-fe",
+      "kind" : "separate",
+      "left" : [
+        "drug:levodopa"
+      ],
+      "reason" : "鐵會跟 levodopa 結合，降低藥效。",
+      "right" : [
+        "fe"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Iron",
+      "title" : "Levodopa 跟鐵分開 2 小時"
+    },
+    {
+      "id" : "antipsy-sjw",
+      "kind" : "caution",
+      "left" : [
+        "drug:antipsychotic"
+      ],
+      "reason" : "聖約翰草會加速這類藥物在肝臟的代謝，血中濃度下降、藥效變差。要吃先問身心科醫師。",
+      "right" : [
+        "stjohnswort"
+      ],
+      "severity" : 2,
+      "source" : "NIH NCCIH — St. John's Wort（CYP3A4 交互作用）",
+      "title" : "抗精神病藥不要配聖約翰草"
+    },
+    {
+      "id" : "antipsy-sed",
+      "kind" : "caution",
+      "left" : [
+        "drug:antipsychotic"
+      ],
+      "reason" : "鎮靜作用相加，白天可能更昏沉。要併用請告訴醫師。",
+      "right" : [
+        "melatonin",
+        "valerian"
+      ],
+      "severity" : 1,
+      "source" : "NIH NCCIH — Melatonin",
+      "title" : "抗精神病藥加褪黑激素／纈草"
+    },
+    {
+      "id" : "lithium-caffeine",
+      "kind" : "caution",
+      "left" : [
+        "drug:lithium"
+      ],
+      "reason" : "咖啡因會加快鋰的排出；突然戒咖啡血鋰反而會升。不是不能喝，是每天的量要穩定，並讓醫師知道。",
+      "right" : [
+        "caffeine"
+      ],
+      "severity" : 1,
+      "source" : "MedlinePlus — Lithium",
+      "title" : "鋰鹽遇到咖啡因"
+    },
+    {
+      "id" : "lithium-ca",
+      "kind" : "caution",
+      "left" : [
+        "drug:lithium"
+      ],
+      "reason" : "長期鋰鹽可能讓血鈣偏高，再補鈣風險略增。定期驗血就好，不必停。",
+      "right" : [
+        "ca"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Calcium",
+      "title" : "長期吃鋰鹽又補鈣"
+    }
+  ],
+  "schema" : 1,
+  "updatedAt" : "2026-09-05",
+  "version" : 1
+}
