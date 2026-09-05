@@ -1,320 +1,902 @@
 {
-  "drugAliases" : {
-    "antibiotic" : [
-      "tetracycline",
-      "doxycycline",
-      "minocycline",
-      "ciprofloxacin",
-      "levofloxacin",
-      "moxifloxacin",
-      "ofloxacin",
-      "amoxicillin",
-      "augmentin",
-      "安滅菌",
-      "cephalexin",
-      "cefuroxime",
-      "cefixime",
-      "azithromycin",
-      "zithromax",
-      "日舒",
-      "clarithromycin",
-      "klaricid",
-      "erythromycin",
-      "metronidazole",
-      "flagyl",
-      "clindamycin",
-      "抗生素",
-      "penicillin"
-    ],
-    "antipsychotic" : [
-      "aripiprazole",
-      "abilify",
-      "安立復",
-      "易靜",
-      "ezole",
-      "olanzapine",
-      "zyprexa",
-      "金普薩",
-      "risperidone",
-      "risperdal",
-      "理思必妥",
-      "paliperidone",
-      "invega",
-      "思維佳",
-      "haloperidol",
-      "haldol",
-      "sulpiride",
-      "dogmatyl",
-      "amisulpride",
-      "solian",
-      "clozapine",
-      "clozaril",
-      "可致律",
-      "lurasidone",
-      "latuda",
-      "brexpiprazole",
-      "rexulti",
-      "抗精神病"
-    ],
-    "antithrombotic" : [
-      "warfarin",
-      "coumadin",
-      "可邁丁",
-      "華法林",
-      "rivaroxaban",
-      "xarelto",
-      "拜瑞妥",
-      "apixaban",
-      "eliquis",
-      "艾必克凝",
-      "dabigatran",
-      "pradaxa",
-      "普栓達",
-      "edoxaban",
-      "lixiana",
-      "里先安",
-      "clopidogrel",
-      "plavix",
-      "保栓通",
-      "ticagrelor",
-      "brilinta",
-      "百無凝",
-      "aspirin",
-      "アスピリン",
-      "阿斯匹靈",
-      "阿司匹林",
-      "伯基",
-      "bokey",
-      "抗凝血劑",
-      "抗血小板"
-    ],
-    "betaBlocker" : [
-      "propranolol",
-      "inderal",
-      "心律",
-      "恩特來",
-      "metoprolol",
-      "betaloc",
-      "倍他樂",
-      "bisoprolol",
-      "concor",
-      "康肯",
-      "atenolol",
-      "tenormin",
-      "carvedilol",
-      "dilatrend",
-      "達利全",
-      "nebivolol",
-      "nebilet"
-    ],
-    "bisphosphonate" : [
-      "alendronate",
-      "fosamax",
-      "福善美",
-      "risedronate",
-      "actonel",
-      "安妥良",
-      "ibandronate",
-      "bonviva",
-      "骨力強",
-      "雙磷酸鹽"
-    ],
-    "levodopa" : [
-      "levodopa",
-      "madopar",
-      "美道普",
-      "sinemet",
-      "心寧美",
-      "stalevo"
-    ],
-    "lithium" : [
-      "lithium",
-      "鋰鹽",
-      "碳酸鋰",
-      "camcolit",
-      "lithium carbonate",
-      "priadel",
-      "立達"
-    ],
-    "metformin" : [
-      "metformin",
-      "glucophage",
-      "庫魯化",
-      "二甲雙胍"
-    ],
-    "ppi" : [
-      "omeprazole",
-      "losec",
-      "樂酸克",
-      "esomeprazole",
-      "nexium",
-      "耐適恩",
-      "lansoprazole",
-      "takepron",
-      "泰克胃通",
-      "pantoprazole",
-      "pantoloc",
-      "保衛康",
-      "rabeprazole",
-      "pariet",
-      "百抑潰",
-      "dexlansoprazole",
-      "dexilant",
-      "得喜胃通"
-    ],
-    "raas" : [
-      "lisinopril",
-      "enalapril",
-      "ramipril",
-      "perindopril",
-      "captopril",
-      "losartan",
-      "cozaar",
-      "可悅您",
-      "valsartan",
-      "diovan",
-      "得安穩",
-      "irbesartan",
-      "olmesartan",
-      "telmisartan",
-      "micardis",
-      "必康平",
-      "candesartan",
-      "spironolactone",
-      "aldactone",
-      "安達通",
-      "eplerenone"
-    ],
-    "sedative" : [
-      "alprazolam",
-      "xanax",
-      "贊安諾",
-      "lorazepam",
-      "ativan",
-      "安定文",
-      "clonazepam",
-      "rivotril",
-      "利福全",
-      "diazepam",
-      "valium",
-      "煩寧",
-      "estazolam",
-      "eurodin",
-      "悠樂丁",
-      "flunitrazepam",
-      "rohypnol",
-      "brotizolam",
-      "lendormin",
-      "戀多眠",
-      "zolpidem",
-      "stilnox",
-      "使蒂諾斯",
-      "zopiclone",
-      "imovane",
-      "宜眠安",
-      "zaleplon",
-      "quetiapine",
-      "seroquel",
-      "思樂康",
-      "安眠藥",
-      "鎮靜劑",
-      "bzd"
-    ],
-    "ssri" : [
-      "escitalopram",
-      "lexapro",
-      "立普能",
-      "sertraline",
-      "zoloft",
-      "樂復得",
-      "fluoxetine",
-      "prozac",
-      "百憂解",
-      "paroxetine",
-      "seroxat",
-      "克憂果",
-      "fluvoxamine",
-      "luvox",
-      "無鬱寧",
-      "citalopram",
-      "cipram",
-      "venlafaxine",
-      "efexor",
-      "速悅",
-      "duloxetine",
-      "cymbalta",
-      "千憂解",
-      "desvenlafaxine",
-      "pristiq",
-      "trazodone",
-      "mesyrel",
-      "美舒鬱",
-      "mirtazapine",
-      "remeron",
-      "樂活憂",
-      "vortioxetine",
-      "brintellix",
-      "心達悅",
-      "bupropion",
-      "wellbutrin",
-      "威克倦",
-      "ssri",
-      "snri",
-      "抗憂鬱"
-    ],
-    "statin" : [
-      "atorvastatin",
-      "lipitor",
-      "立普妥",
-      "rosuvastatin",
-      "crestor",
-      "冠脂妥",
-      "simvastatin",
-      "zocor",
-      "素果",
-      "pravastatin",
-      "mevalotin",
-      "美百樂鎮",
-      "pitavastatin",
-      "livalo",
-      "力清之",
-      "statin"
-    ],
-    "tetracyclineQuinolone" : [
-      "tetracycline",
-      "doxycycline",
-      "minocycline",
-      "四環黴素",
-      "ciprofloxacin",
-      "levofloxacin",
-      "moxifloxacin",
-      "ofloxacin",
-      "cravit",
-      "可樂必妥",
-      "ciproxin",
-      "速博新",
-      "avelox",
-      "喹諾酮"
-    ],
-    "thyroid" : [
-      "levothyroxine",
-      "eltroxin",
-      "昂特欣",
-      "synthroid",
-      "thyroxine",
-      "甲狀腺素",
-      "thyrosit",
-      "euthyrox",
-      "優甲樂"
-    ],
-    "warfarin" : [
-      "warfarin",
-      "coumadin",
-      "可邁丁",
-      "華法林",
-      "warfarin鈉"
-    ]
-  },
+  "conditions" : [
+    {
+      "group" : "心血管與代謝",
+      "key" : "hypertension",
+      "label" : "高血壓",
+      "note" : "鼻塞藥（偽麻黃鹼）、甘草、麻黃會升血壓。"
+    },
+    {
+      "group" : "心血管與代謝",
+      "key" : "diabetes",
+      "label" : "糖尿病",
+      "note" : "高劑量菸鹼酸會讓血糖上升；部分中藥與降血糖藥有加成。"
+    },
+    {
+      "group" : "心血管與代謝",
+      "key" : "hyperlipidemia",
+      "label" : "高血脂"
+    },
+    {
+      "group" : "心血管與代謝",
+      "key" : "heartDisease",
+      "label" : "心臟病／心律不整",
+      "note" : "鼻塞藥會加快心跳。"
+    },
+    {
+      "group" : "心血管與代謝",
+      "key" : "gout",
+      "label" : "痛風／高尿酸",
+      "note" : "菸鹼酸會讓尿酸升高。"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "kidney",
+      "label" : "腎臟病",
+      "note" : "鉀、鎂、磷補充與消炎止痛藥都要先問醫師。"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "liver",
+      "label" : "肝病",
+      "note" : "高劑量菸鹼酸與既成維生素A 會加重肝臟負擔。"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "thyroid",
+      "label" : "甲狀腺疾病",
+      "note" : "補碘（海帶、昆布）可能讓甲亢或甲減惡化。"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "gastricUlcer",
+      "label" : "胃潰瘍／胃食道逆流",
+      "note" : "消炎止痛藥傷胃；鐵劑刺激腸胃。"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "bleeding",
+      "label" : "出血傾向／凝血異常",
+      "note" : "魚油、維生素E、銀杏高劑量會拉長凝血時間。"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "asthma",
+      "label" : "氣喘"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "glaucoma",
+      "label" : "青光眼",
+      "note" : "鼻塞藥會升眼壓。"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "prostate",
+      "label" : "攝護腺肥大",
+      "note" : "鼻塞藥會讓排尿更困難。"
+    },
+    {
+      "group" : "器官與慢性病",
+      "key" : "osteoporosis",
+      "label" : "骨質疏鬆",
+      "note" : "長期高劑量既成維生素A 與骨密度下降有關。"
+    },
+    {
+      "group" : "身心",
+      "key" : "depressionAnxiety",
+      "label" : "憂鬱／焦慮（身心科用藥中）",
+      "note" : "不要自行加聖約翰草、5-HTP。"
+    },
+    {
+      "group" : "身心",
+      "key" : "insomnia",
+      "label" : "失眠"
+    },
+    {
+      "group" : "生活與生育",
+      "key" : "planningPregnancy",
+      "label" : "備孕",
+      "note" : "每日 400 µg 葉酸；避開高劑量既成維生素A 與口服 A 酸。"
+    },
+    {
+      "group" : "生活與生育",
+      "key" : "smoker",
+      "label" : "吸菸",
+      "note" : "高劑量 β-胡蘿蔔素補充劑在吸菸者試驗中肺癌風險反而升高。"
+    }
+  ],
+  "drugClasses" : [
+    {
+      "aliases" : [
+        "warfarin",
+        "coumadin",
+        "可邁丁",
+        "華法林",
+        "warfarin鈉"
+      ],
+      "implies" : [
+        "antithrombotic"
+      ],
+      "key" : "warfarin",
+      "label" : "抗凝血劑（華法林）"
+    },
+    {
+      "aliases" : [
+        "rivaroxaban",
+        "xarelto",
+        "拜瑞妥",
+        "apixaban",
+        "eliquis",
+        "艾必克凝",
+        "dabigatran",
+        "pradaxa",
+        "普栓達",
+        "edoxaban",
+        "lixiana",
+        "里先安",
+        "clopidogrel",
+        "plavix",
+        "保栓通",
+        "ticagrelor",
+        "brilinta",
+        "百無凝",
+        "aspirin",
+        "アスピリン",
+        "阿斯匹靈",
+        "阿司匹林",
+        "伯基",
+        "bokey",
+        "抗凝血劑",
+        "抗血小板",
+        "cilostazol",
+        "pletaal",
+        "普達",
+        "dipyridamole",
+        "heparin"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "antithrombotic",
+      "label" : "抗凝血／抗血小板藥"
+    },
+    {
+      "aliases" : [
+        "levothyroxine",
+        "eltroxin",
+        "昂特欣",
+        "synthroid",
+        "thyroxine",
+        "甲狀腺素",
+        "thyrosit",
+        "euthyrox",
+        "優甲樂"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "thyroid",
+      "label" : "甲狀腺素"
+    },
+    {
+      "aliases" : [
+        "tetracycline",
+        "doxycycline",
+        "minocycline",
+        "四環黴素",
+        "ciprofloxacin",
+        "levofloxacin",
+        "moxifloxacin",
+        "ofloxacin",
+        "cravit",
+        "可樂必妥",
+        "ciproxin",
+        "速博新",
+        "avelox",
+        "喹諾酮"
+      ],
+      "implies" : [
+        "antibiotic"
+      ],
+      "key" : "tetracyclineQuinolone",
+      "label" : "四環黴素／喹諾酮類抗生素"
+    },
+    {
+      "aliases" : [
+        "amoxicillin",
+        "augmentin",
+        "安滅菌",
+        "cephalexin",
+        "cefuroxime",
+        "cefixime",
+        "azithromycin",
+        "zithromax",
+        "日舒",
+        "clarithromycin",
+        "klaricid",
+        "erythromycin",
+        "metronidazole",
+        "flagyl",
+        "clindamycin",
+        "抗生素",
+        "penicillin",
+        "trimethoprim",
+        "sulfamethoxazole",
+        "baktar",
+        "撲菌特",
+        "nitrofurantoin",
+        "streptomycin",
+        "kanamycin",
+        "oxacillin",
+        "isoniazid"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "antibiotic",
+      "label" : "抗生素"
+    },
+    {
+      "aliases" : [
+        "escitalopram",
+        "lexapro",
+        "立普能",
+        "sertraline",
+        "zoloft",
+        "樂復得",
+        "fluoxetine",
+        "prozac",
+        "百憂解",
+        "paroxetine",
+        "seroxat",
+        "克憂果",
+        "fluvoxamine",
+        "luvox",
+        "無鬱寧",
+        "citalopram",
+        "cipram",
+        "venlafaxine",
+        "efexor",
+        "速悅",
+        "duloxetine",
+        "cymbalta",
+        "千憂解",
+        "desvenlafaxine",
+        "pristiq",
+        "trazodone",
+        "mesyrel",
+        "美舒鬱",
+        "mirtazapine",
+        "remeron",
+        "樂活憂",
+        "vortioxetine",
+        "brintellix",
+        "心達悅",
+        "bupropion",
+        "wellbutrin",
+        "威克倦",
+        "ssri",
+        "snri"
+      ],
+      "implies" : [
+        "antidepressant"
+      ],
+      "key" : "ssri",
+      "label" : "血清素類抗憂鬱劑"
+    },
+    {
+      "aliases" : [
+        "抗憂鬱",
+        "amitriptyline",
+        "imipramine",
+        "tofranil",
+        "clomipramine",
+        "anafranil",
+        "doxepin",
+        "agomelatine",
+        "valdoxan",
+        "煩多閃"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "antidepressant",
+      "label" : "抗憂鬱劑",
+      "note" : "三環類與其他抗憂鬱劑。血清素類另外列，因為聖約翰草的規則是對那一類講的。"
+    },
+    {
+      "aliases" : [
+        "alprazolam",
+        "xanax",
+        "贊安諾",
+        "lorazepam",
+        "ativan",
+        "安定文",
+        "clonazepam",
+        "rivotril",
+        "利福全",
+        "diazepam",
+        "valium",
+        "煩寧",
+        "estazolam",
+        "eurodin",
+        "悠樂丁",
+        "flunitrazepam",
+        "rohypnol",
+        "brotizolam",
+        "lendormin",
+        "戀多眠",
+        "zolpidem",
+        "stilnox",
+        "使蒂諾斯",
+        "zopiclone",
+        "imovane",
+        "宜眠安",
+        "zaleplon",
+        "quetiapine",
+        "seroquel",
+        "思樂康",
+        "安眠藥",
+        "鎮靜劑",
+        "bzd",
+        "midazolam",
+        "dormicum",
+        "導眠靜",
+        "oxazepam",
+        "nitrazepam",
+        "chlordiazepoxide",
+        "fludiazepam",
+        "phenobarbital",
+        "allobarbital"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "sedative",
+      "label" : "鎮靜安眠藥"
+    },
+    {
+      "aliases" : [
+        "alendronate",
+        "fosamax",
+        "福善美",
+        "risedronate",
+        "actonel",
+        "安妥良",
+        "ibandronate",
+        "bonviva",
+        "骨力強",
+        "雙磷酸鹽"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "bisphosphonate",
+      "label" : "骨鬆藥（雙磷酸鹽）"
+    },
+    {
+      "aliases" : [
+        "metformin",
+        "glucophage",
+        "庫魯化",
+        "二甲雙胍"
+      ],
+      "implies" : [
+        "hypoglycemic"
+      ],
+      "key" : "metformin",
+      "label" : "Metformin"
+    },
+    {
+      "aliases" : [
+        "降血糖",
+        "glimepiride",
+        "amaryl",
+        "瑪爾胰",
+        "gliclazide",
+        "diamicron",
+        "岱蜜克龍",
+        "glibenclamide",
+        "euglucon",
+        "glyburide",
+        "tolbutamide",
+        "chlorpropamide",
+        "sitagliptin",
+        "januvia",
+        "佳糖維",
+        "linagliptin",
+        "trajenta",
+        "糖漸平",
+        "empagliflozin",
+        "jardiance",
+        "恩排糖",
+        "dapagliflozin",
+        "forxiga",
+        "福適佳",
+        "canagliflozin",
+        "pioglitazone",
+        "actos",
+        "愛妥糖",
+        "rosiglitazone",
+        "acarbose",
+        "glucobay",
+        "醣祿",
+        "repaglinide",
+        "insulin",
+        "胰島素",
+        "liraglutide",
+        "victoza",
+        "semaglutide",
+        "ozempic",
+        "dulaglutide",
+        "trulicity"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "hypoglycemic",
+      "label" : "降血糖藥"
+    },
+    {
+      "aliases" : [
+        "atorvastatin",
+        "lipitor",
+        "立普妥",
+        "rosuvastatin",
+        "crestor",
+        "冠脂妥",
+        "simvastatin",
+        "zocor",
+        "素果",
+        "pravastatin",
+        "mevalotin",
+        "美百樂鎮",
+        "pitavastatin",
+        "livalo",
+        "力清之",
+        "lovastatin",
+        "statin"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "statin",
+      "label" : "降血脂 Statin"
+    },
+    {
+      "aliases" : [
+        "omeprazole",
+        "losec",
+        "樂酸克",
+        "esomeprazole",
+        "nexium",
+        "耐適恩",
+        "lansoprazole",
+        "takepron",
+        "泰克胃通",
+        "pantoprazole",
+        "pantoloc",
+        "保衛康",
+        "rabeprazole",
+        "pariet",
+        "百抑潰",
+        "dexlansoprazole",
+        "dexilant",
+        "得喜胃通"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "ppi",
+      "label" : "胃藥（PPI）"
+    },
+    {
+      "aliases" : [
+        "lisinopril",
+        "enalapril",
+        "ramipril",
+        "perindopril",
+        "captopril",
+        "losartan",
+        "cozaar",
+        "可悅您",
+        "valsartan",
+        "diovan",
+        "得安穩",
+        "irbesartan",
+        "olmesartan",
+        "telmisartan",
+        "micardis",
+        "必康平",
+        "candesartan",
+        "spironolactone",
+        "aldactone",
+        "安達通",
+        "eplerenone",
+        "amiloride"
+      ],
+      "implies" : [
+        "antihypertensive"
+      ],
+      "key" : "raas",
+      "label" : "降血壓（ACEI／ARB／保鉀利尿劑）"
+    },
+    {
+      "aliases" : [
+        "propranolol",
+        "inderal",
+        "心律",
+        "恩特來",
+        "metoprolol",
+        "betaloc",
+        "倍他樂",
+        "bisoprolol",
+        "concor",
+        "康肯",
+        "atenolol",
+        "tenormin",
+        "carvedilol",
+        "dilatrend",
+        "達利全",
+        "nebivolol",
+        "nebilet"
+      ],
+      "implies" : [
+        "antihypertensive"
+      ],
+      "key" : "betaBlocker",
+      "label" : "β阻斷劑（降心跳／血壓）",
+      "note" : "認得，但目前沒有來源可靠的保健品交互作用，只是不再被當成「認不出」。"
+    },
+    {
+      "aliases" : [
+        "降血壓",
+        "血壓藥",
+        "amlodipine",
+        "norvasc",
+        "脈優",
+        "nifedipine",
+        "adalat",
+        "felodipine",
+        "plendil",
+        "普心寧",
+        "diltiazem",
+        "herbesser",
+        "verapamil",
+        "isoptin",
+        "hydralazine",
+        "doxazosin",
+        "cardura",
+        "可迅",
+        "prazosin",
+        "clonidine",
+        "methyldopa"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "antihypertensive",
+      "label" : "降血壓藥"
+    },
+    {
+      "aliases" : [
+        "利尿劑",
+        "furosemide",
+        "lasix",
+        "來適泄",
+        "hydrochlorothiazide",
+        "hctz",
+        "indapamide",
+        "natrilix",
+        "鈉催離",
+        "chlorthalidone",
+        "torsemide",
+        "bumetanide",
+        "thiazide"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "diuretic",
+      "label" : "利尿劑"
+    },
+    {
+      "aliases" : [
+        "digoxin",
+        "lanoxin",
+        "隆我心",
+        "毛地黃",
+        "digitoxin"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "digoxin",
+      "label" : "毛地黃（Digoxin）"
+    },
+    {
+      "aliases" : [
+        "levodopa",
+        "madopar",
+        "美道普",
+        "sinemet",
+        "心寧美",
+        "stalevo"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "levodopa",
+      "label" : "Levodopa"
+    },
+    {
+      "aliases" : [
+        "aripiprazole",
+        "abilify",
+        "安立復",
+        "易靜",
+        "ezole",
+        "olanzapine",
+        "zyprexa",
+        "金普薩",
+        "risperidone",
+        "risperdal",
+        "理思必妥",
+        "paliperidone",
+        "invega",
+        "思維佳",
+        "haloperidol",
+        "haldol",
+        "sulpiride",
+        "dogmatyl",
+        "amisulpride",
+        "solian",
+        "clozapine",
+        "clozaril",
+        "可致律",
+        "lurasidone",
+        "latuda",
+        "brexpiprazole",
+        "rexulti",
+        "抗精神病"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "antipsychotic",
+      "label" : "抗精神病藥"
+    },
+    {
+      "aliases" : [
+        "lithium",
+        "鋰鹽",
+        "碳酸鋰",
+        "camcolit",
+        "lithium carbonate",
+        "priadel",
+        "立達"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "lithium",
+      "label" : "鋰鹽"
+    },
+    {
+      "aliases" : [
+        "phenelzine",
+        "nardil",
+        "moclobemide",
+        "aurorix",
+        "selegiline",
+        "deprenyl",
+        "jumexal",
+        "rasagiline",
+        "azilect",
+        "tranylcypromine",
+        "mao抑制",
+        "單胺氧化酶"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "maoi",
+      "label" : "MAO 抑制劑"
+    },
+    {
+      "aliases" : [
+        "donepezil",
+        "aricept",
+        "愛憶欣",
+        "rivastigmine",
+        "exelon",
+        "憶思能",
+        "galantamine",
+        "reminyl",
+        "利憶靈",
+        "memantine",
+        "ebixa",
+        "威智",
+        "失智"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "anticholinesterase",
+      "label" : "失智症藥"
+    },
+    {
+      "aliases" : [
+        "類固醇",
+        "prednisolone",
+        "prednisone",
+        "methylprednisolone",
+        "medrol",
+        "dexamethasone",
+        "hydrocortisone",
+        "betamethasone",
+        "cortisone",
+        "可體松",
+        "compesolon"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "corticosteroid",
+      "label" : "類固醇"
+    },
+    {
+      "aliases" : [
+        "免疫抑制",
+        "ciclosporin",
+        "cyclosporine",
+        "cyclosporin",
+        "sandimmun",
+        "neoral",
+        "新體睦",
+        "tacrolimus",
+        "prograf",
+        "普樂可復",
+        "sirolimus",
+        "rapamune",
+        "everolimus",
+        "mycophenolate",
+        "cellcept",
+        "山喜多",
+        "azathioprine",
+        "imuran",
+        "移護寧"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "immunosuppressant",
+      "label" : "免疫抑制劑"
+    },
+    {
+      "aliases" : [
+        "nsaid",
+        "消炎止痛",
+        "ibuprofen",
+        "布洛芬",
+        "依普芬",
+        "naproxen",
+        "能百鎮",
+        "diclofenac",
+        "voltaren",
+        "服他寧",
+        "ketoprofen",
+        "mefenamic",
+        "ponstan",
+        "博舒痛",
+        "celecoxib",
+        "celebrex",
+        "希樂葆",
+        "etoricoxib",
+        "arcoxia",
+        "萬克適",
+        "meloxicam",
+        "mobic",
+        "indomethacin",
+        "piroxicam"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "nsaid",
+      "label" : "消炎止痛藥（NSAID）"
+    },
+    {
+      "aliases" : [
+        "pseudoephedrine",
+        "偽麻黃鹼",
+        "假麻黃鹼",
+        "phenylephrine",
+        "methylephedrine",
+        "甲基麻黃鹼",
+        "ephedrine",
+        "麻黃鹼",
+        "麻黃素",
+        "sudafed",
+        "莫鼻卡",
+        "擬交感"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "decongestant",
+      "label" : "鼻塞藥（偽麻黃鹼類）"
+    },
+    {
+      "aliases" : [
+        "化療",
+        "抗癌",
+        "methotrexate",
+        "cisplatin",
+        "paclitaxel",
+        "taxol",
+        "docetaxel",
+        "taxotere",
+        "tamoxifen",
+        "諾瓦得士",
+        "letrozole",
+        "femara",
+        "復乳納",
+        "anastrozole",
+        "capecitabine",
+        "xeloda",
+        "截瘤達",
+        "busulfan",
+        "mitomycin"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "antineoplastic",
+      "label" : "抗癌藥／化療"
+    },
+    {
+      "aliases" : [
+        "避孕",
+        "ethinylestradiol",
+        "ethinyloestradiol",
+        "levonorgestrel",
+        "drospirenone",
+        "yasmin",
+        "悅己",
+        "yaz",
+        "悅姿",
+        "diane",
+        "黛麗安",
+        "desogestrel",
+        "gestodene"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "contraceptive",
+      "label" : "口服避孕藥"
+    },
+    {
+      "aliases" : [
+        "estradiol",
+        "estrogen",
+        "雌激素",
+        "premarin",
+        "普力馬林",
+        "estriol",
+        "progynova",
+        "益斯得",
+        "荷爾蒙補充"
+      ],
+      "implies" : [
+
+      ],
+      "key" : "estrogen",
+      "label" : "雌激素／荷爾蒙補充"
+    }
+  ],
   "forms" : [
     {
       "aliases" : [
@@ -456,6 +1038,18 @@
         "베타카로틴"
       ],
       "en" : "Vitamin A",
+      "groups" : {
+        "adult" : {
+          "f" : 500,
+          "m" : 600
+        },
+        "lactationAdd" : 400,
+        "pregnancyAdd" : [
+          0,
+          0,
+          100
+        ]
+      },
       "iuFactor" : 0.3,
       "key" : "vitA",
       "note" : "以視網醇當量（µg RE）計。上限只計既成維生素A（視黃醇及其酯）；β-胡蘿蔔素不計入上限，以 6 µg＝1 µg RE 換算進攝取量。",
@@ -489,6 +1083,22 @@
         "비타민d3"
       ],
       "en" : "Vitamin D",
+      "groups" : {
+        "adult" : {
+          "f" : 10,
+          "m" : 10
+        },
+        "lactationAdd" : 0,
+        "older51" : {
+          "f" : 15,
+          "m" : 15
+        },
+        "pregnancyAdd" : [
+          0,
+          0,
+          0
+        ]
+      },
       "iuFactor" : 0.025,
       "key" : "vitD",
       "note" : "50 µg = 2000 IU。醫師開的高劑量療程（例如 5 萬 IU 週劑）請在設定裡自訂上限。",
@@ -517,6 +1127,18 @@
         "토코페롤"
       ],
       "en" : "Vitamin E",
+      "groups" : {
+        "adult" : {
+          "f" : 12,
+          "m" : 12
+        },
+        "lactationAdd" : 3,
+        "pregnancyAdd" : [
+          2,
+          2,
+          2
+        ]
+      },
       "iuFactor" : 0.67,
       "key" : "vitE",
       "note" : "以 α-生育醇當量（mg α-TE）計；IU 換算採天然型 1 IU = 0.67 mg。IOM 註明 UL 適用於補充劑中任何形式的 α-生育醇。",
@@ -548,6 +1170,19 @@
         "비타민k2"
       ],
       "en" : "Vitamin K",
+      "groups" : {
+        "adult" : {
+          "f" : 90,
+          "m" : 120
+        },
+        "kind" : "AI",
+        "lactationAdd" : 0,
+        "pregnancyAdd" : [
+          0,
+          0,
+          0
+        ]
+      },
       "key" : "vitK",
       "note" : "服用抗凝血劑（warfarin）者，維生素K攝取量的變動要跟醫師討論。",
       "rda" : 90,
@@ -573,6 +1208,18 @@
         "아스코르브산"
       ],
       "en" : "Vitamin C",
+      "groups" : {
+        "adult" : {
+          "f" : 100,
+          "m" : 100
+        },
+        "lactationAdd" : 40,
+        "pregnancyAdd" : [
+          10,
+          10,
+          10
+        ]
+      },
       "key" : "vitC",
       "rda" : 100,
       "ul" : 2000,
@@ -596,6 +1243,18 @@
         "티아민"
       ],
       "en" : "Thiamin",
+      "groups" : {
+        "adult" : {
+          "f" : 0.9,
+          "m" : 1.2
+        },
+        "lactationAdd" : 0.3,
+        "pregnancyAdd" : [
+          0,
+          0.2,
+          0.2
+        ]
+      },
       "key" : "b1",
       "rda" : 1.1,
       "ulScope" : "total",
@@ -616,6 +1275,18 @@
         "리보플라빈"
       ],
       "en" : "Riboflavin",
+      "groups" : {
+        "adult" : {
+          "f" : 1,
+          "m" : 1.3
+        },
+        "lactationAdd" : 0.4,
+        "pregnancyAdd" : [
+          0,
+          0.2,
+          0.2
+        ]
+      },
       "key" : "b2",
       "rda" : 1.2,
       "ulScope" : "total",
@@ -643,6 +1314,18 @@
         "니코틴산아미드"
       ],
       "en" : "Niacin",
+      "groups" : {
+        "adult" : {
+          "f" : 14,
+          "m" : 16
+        },
+        "lactationAdd" : 4,
+        "pregnancyAdd" : [
+          0,
+          2,
+          2
+        ]
+      },
       "key" : "b3",
       "note" : "UL 35 mg NE 同時涵蓋菸鹼酸與菸鹼醯胺，是為了避免菸鹼酸的潮紅而訂；菸鹼醯胺一般不潮紅。IOM 註明 UL 適用於補充劑與強化食品中的合成形式。",
       "rda" : 14,
@@ -664,6 +1347,19 @@
         "판토텐산"
       ],
       "en" : "Pantothenic acid",
+      "groups" : {
+        "adult" : {
+          "f" : 5,
+          "m" : 5
+        },
+        "kind" : "AI",
+        "lactationAdd" : 2,
+        "pregnancyAdd" : [
+          1,
+          1,
+          1
+        ]
+      },
       "key" : "b5",
       "rda" : 5,
       "ulScope" : "total",
@@ -686,6 +1382,22 @@
         "피리독신"
       ],
       "en" : "Vitamin B6",
+      "groups" : {
+        "adult" : {
+          "f" : 1.5,
+          "m" : 1.5
+        },
+        "lactationAdd" : 0.4,
+        "older51" : {
+          "f" : 1.6,
+          "m" : 1.6
+        },
+        "pregnancyAdd" : [
+          0.4,
+          0.4,
+          0.4
+        ]
+      },
       "key" : "b6",
       "note" : "長期每日超過上限可能造成周邊神經病變。",
       "rda" : 1.5,
@@ -706,6 +1418,19 @@
         "비오틴"
       ],
       "en" : "Biotin",
+      "groups" : {
+        "adult" : {
+          "f" : 30,
+          "m" : 30
+        },
+        "kind" : "AI",
+        "lactationAdd" : 5,
+        "pregnancyAdd" : [
+          0,
+          0,
+          0
+        ]
+      },
       "key" : "b7",
       "note" : "高劑量生物素會干擾甲狀腺、心肌等血液檢驗，抽血前 2–3 天先停。",
       "rda" : 30,
@@ -726,6 +1451,18 @@
         "엽산"
       ],
       "en" : "Folate",
+      "groups" : {
+        "adult" : {
+          "f" : 400,
+          "m" : 400
+        },
+        "lactationAdd" : 100,
+        "pregnancyAdd" : [
+          200,
+          200,
+          200
+        ]
+      },
       "key" : "b9",
       "note" : "UL 針對補充劑與強化食品中的合成葉酸（含甲基葉酸），食物中的天然葉酸不計。",
       "rda" : 400,
@@ -752,6 +1489,18 @@
         "코발라민"
       ],
       "en" : "Vitamin B12",
+      "groups" : {
+        "adult" : {
+          "f" : 2.4,
+          "m" : 2.4
+        },
+        "lactationAdd" : 0.4,
+        "pregnancyAdd" : [
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
       "key" : "b12",
       "rda" : 2.4,
       "ulScope" : "total",
@@ -769,6 +1518,19 @@
         "콜린"
       ],
       "en" : "Choline",
+      "groups" : {
+        "adult" : {
+          "f" : 390,
+          "m" : 450
+        },
+        "kind" : "AI",
+        "lactationAdd" : 140,
+        "pregnancyAdd" : [
+          20,
+          20,
+          20
+        ]
+      },
       "key" : "choline",
       "rda" : 400,
       "ul" : 3500,
@@ -791,6 +1553,19 @@
         "칼슘"
       ],
       "en" : "Calcium",
+      "groups" : {
+        "adult" : {
+          "f" : 1000,
+          "m" : 1000
+        },
+        "kind" : "AI",
+        "lactationAdd" : 0,
+        "pregnancyAdd" : [
+          0,
+          0,
+          0
+        ]
+      },
       "key" : "ca",
       "note" : "以「鈣離子」量計；碳酸鈣的鈣含量約 40%，包裝若寫化合物重量會高估。",
       "rda" : 1000,
@@ -807,6 +1582,20 @@
         "phosphate"
       ],
       "en" : "Phosphorus",
+      "groups" : {
+        "adult" : {
+          "f" : 800,
+          "m" : 800
+        },
+        "kind" : "AI",
+        "lactationAdd" : 0,
+        "pregnancyAdd" : [
+          0,
+          0,
+          0
+        ],
+        "ulPregnancy" : 3500
+      },
       "key" : "p",
       "rda" : 800,
       "ul" : 4000,
@@ -830,6 +1619,26 @@
         "마그네슘"
       ],
       "en" : "Magnesium",
+      "groups" : {
+        "adult" : {
+          "f" : 320,
+          "m" : 380
+        },
+        "lactationAdd" : 0,
+        "older51" : {
+          "f" : 310,
+          "m" : 360
+        },
+        "older71" : {
+          "f" : 300,
+          "m" : 350
+        },
+        "pregnancyAdd" : [
+          35,
+          35,
+          35
+        ]
+      },
       "key" : "mg",
       "note" : "第八版（111 年修訂）UL 350 mg，總表註明為非食物性鎂量，即補充劑的量；食物裡的鎂不計。超過常見的反應是腹瀉。",
       "rda" : 350,
@@ -855,6 +1664,22 @@
         "헴철"
       ],
       "en" : "Iron",
+      "groups" : {
+        "adult" : {
+          "f" : 15,
+          "m" : 10
+        },
+        "lactationAdd" : 30,
+        "older51" : {
+          "f" : 10,
+          "m" : 10
+        },
+        "pregnancyAdd" : [
+          0,
+          0,
+          30
+        ]
+      },
       "key" : "fe",
       "note" : "總表註明 UL 只適用於強化食品與補充劑的總鐵量。空腹高劑量常見腸胃不適。",
       "rda" : 12,
@@ -876,6 +1701,18 @@
         "아연"
       ],
       "en" : "Zinc",
+      "groups" : {
+        "adult" : {
+          "f" : 12,
+          "m" : 15
+        },
+        "lactationAdd" : 3,
+        "pregnancyAdd" : [
+          3,
+          3,
+          3
+        ]
+      },
       "key" : "zn",
       "rda" : 12,
       "ul" : 35,
@@ -896,6 +1733,18 @@
         "요오드"
       ],
       "en" : "Iodine",
+      "groups" : {
+        "adult" : {
+          "f" : 150,
+          "m" : 150
+        },
+        "lactationAdd" : 100,
+        "pregnancyAdd" : [
+          75,
+          75,
+          75
+        ]
+      },
       "key" : "i",
       "rda" : 150,
       "ul" : 1000,
@@ -915,6 +1764,18 @@
         "셀렌"
       ],
       "en" : "Selenium",
+      "groups" : {
+        "adult" : {
+          "f" : 55,
+          "m" : 55
+        },
+        "lactationAdd" : 15,
+        "pregnancyAdd" : [
+          5,
+          5,
+          5
+        ]
+      },
       "key" : "se",
       "rda" : 55,
       "ul" : 400,
@@ -931,6 +1792,19 @@
         "불소"
       ],
       "en" : "Fluoride",
+      "groups" : {
+        "adult" : {
+          "f" : 3,
+          "m" : 3
+        },
+        "kind" : "AI",
+        "lactationAdd" : 0,
+        "pregnancyAdd" : [
+          0,
+          0,
+          0
+        ]
+      },
       "key" : "f",
       "rda" : 3,
       "ul" : 10,
@@ -1015,6 +1889,19 @@
         "칼륨"
       ],
       "en" : "Potassium",
+      "groups" : {
+        "adult" : {
+          "f" : 2500,
+          "m" : 2800
+        },
+        "kind" : "AI",
+        "lactationAdd" : 400,
+        "pregnancyAdd" : [
+          0,
+          0,
+          0
+        ]
+      },
       "key" : "k",
       "note" : "腎功能不佳者補鉀需醫師評估。",
       "rda" : 2800,
@@ -1031,6 +1918,19 @@
         "나트륨"
       ],
       "en" : "Sodium",
+      "groups" : {
+        "adult" : {
+          "f" : 2300,
+          "m" : 2300
+        },
+        "kind" : "CDRR",
+        "lactationAdd" : 0,
+        "pregnancyAdd" : [
+          0,
+          0,
+          0
+        ]
+      },
       "key" : "na",
       "note" : "國健署建議每日鈉攝取不超過 2400 mg（約 6 g 鹽），這是建議值不是 UL。",
       "ul" : 2400,
@@ -1073,6 +1973,14 @@
         "카페인"
       ],
       "en" : "Caffeine",
+      "groups" : {
+        "adult" : {
+          "f" : 400,
+          "m" : 400
+        },
+        "kind" : "custom",
+        "ulPregnancy" : 200
+      },
       "key" : "caffeine",
       "note" : "成人常見建議每日 400 mg 以下；孕期 200 mg。",
       "ul" : 400,
@@ -1347,8 +2255,8 @@
       "reason" : "這些礦物質會綁住甲狀腺素，讓藥效變差。藥通常早上空腹先吃，礦物質移到中午以後。",
       "right" : [
         "fe",
-        "mg",
-        "ca"
+        "ca",
+        "mg"
       ],
       "severity" : 2,
       "source" : "食藥署用藥安全／NIH ODS — Calcium",
@@ -1364,9 +2272,9 @@
       "reason" : "四環黴素、喹諾酮類會被鈣鎂鐵鋅螯合，一起吃藥效大減。以藥師指示為準。",
       "right" : [
         "fe",
-        "mg",
         "zn",
-        "ca"
+        "ca",
+        "mg"
       ],
       "severity" : 2,
       "source" : "食藥署用藥安全／NIH ODS",
@@ -1396,9 +2304,9 @@
       ],
       "reason" : "雙磷酸鹽吸收極差，跟鈣鎂鐵一起幾乎吸收不到。早上空腹先吃藥，至少 30 分鐘後再吃別的。",
       "right" : [
+        "ca",
         "mg",
-        "fe",
-        "ca"
+        "fe"
       ],
       "severity" : 2,
       "source" : "藥品仿單（Fosamax 等）",
@@ -1426,9 +2334,9 @@
       ],
       "reason" : "這些都會再拉長凝血時間，高劑量時出血風險上升。請告訴醫師你在吃這些。",
       "right" : [
-        "ginkgo",
         "omega3",
-        "vitE"
+        "vitE",
+        "ginkgo"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Omega-3、Vitamin E",
@@ -1456,8 +2364,8 @@
       ],
       "reason" : "血清素疊加可能引發血清素症候群（心跳快、發抖、意識混亂）。這一條是「不要」，不是「分開」。先問身心科醫師。",
       "right" : [
-        "stjohnswort",
-        "5htp"
+        "5htp",
+        "stjohnswort"
       ],
       "severity" : 2,
       "source" : "NIH NCCIH — St. John's Wort",
@@ -1471,8 +2379,8 @@
       ],
       "reason" : "鎮靜作用相加，白天可能昏沉、跌倒風險上升。要併用請告訴醫師。",
       "right" : [
-        "melatonin",
-        "valerian"
+        "valerian",
+        "melatonin"
       ],
       "severity" : 1,
       "source" : "NIH NCCIH — Melatonin",
@@ -1514,9 +2422,9 @@
       ],
       "reason" : "胃酸變少，這幾樣吸收都會變差。長期使用者補充是常見做法，定期檢驗比較安心。",
       "right" : [
+        "mg",
         "ca",
-        "b12",
-        "mg"
+        "b12"
       ],
       "severity" : 0,
       "source" : "FDA Drug Safety Communication（PPI 低血鎂）",
@@ -1607,9 +2515,346 @@
       "severity" : 0,
       "source" : "NIH ODS — Calcium",
       "title" : "長期吃鋰鹽又補鈣"
+    },
+    {
+      "id" : "maoi-serotonin",
+      "kind" : "caution",
+      "left" : [
+        "drug:maoi"
+      ],
+      "reason" : "血清素疊加可能引發血清素症候群。這一條是「不要」。先問醫師。",
+      "right" : [
+        "stjohnswort",
+        "5htp"
+      ],
+      "severity" : 2,
+      "source" : "NIH NCCIH — St. John's Wort",
+      "title" : "MAO 抑制劑不要配聖約翰草、5-HTP"
+    },
+    {
+      "id" : "diuretic-k",
+      "kind" : "caution",
+      "left" : [
+        "drug:diuretic"
+      ],
+      "reason" : "排鉀型利尿劑會讓血鉀、血鎂流失，補充常是醫師開的；保鉀型則相反。哪一種、要不要補，以醫師為準。",
+      "right" : [
+        "k",
+        "mg"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Potassium、Magnesium",
+      "title" : "利尿劑跟鉀、鎂"
+    },
+    {
+      "id" : "steroid-ca",
+      "kind" : "caution",
+      "left" : [
+        "drug:corticosteroid"
+      ],
+      "reason" : "類固醇長期使用會讓骨質流失，補鈣與維生素D 是常見的保護措施。劑量請問醫師。",
+      "right" : [
+        "vitD",
+        "ca"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Calcium",
+      "title" : "長期類固醇補鈣、維生素D 是常見做法"
+    },
+    {
+      "id" : "cond-htn-decongestant",
+      "kind" : "caution",
+      "left" : [
+        "condition:hypertension",
+        "condition:heartDisease"
+      ],
+      "reason" : "偽麻黃鹼、麻黃鹼類會收縮血管、升血壓、加快心跳。感冒藥、鼻炎藥常含這類成分，請藥師選不含的。",
+      "right" : [
+        "drug:decongestant"
+      ],
+      "severity" : 1,
+      "source" : "MedlinePlus — Pseudoephedrine；食藥署藥品仿單警語",
+      "title" : "高血壓／心臟病遇到鼻塞藥"
+    },
+    {
+      "id" : "cond-htn-licorice",
+      "kind" : "caution",
+      "left" : [
+        "condition:hypertension"
+      ],
+      "reason" : "甘草長期或大量服用會讓血壓升高、血鉀降低。中藥方裡常見少量甘草，短期影響不大；長期服用請告訴醫師。",
+      "right" : [
+        "herb:甘草"
+      ],
+      "severity" : 0,
+      "source" : "NIH NCCIH — Licorice Root",
+      "title" : "高血壓遇到甘草"
+    },
+    {
+      "id" : "cond-htn-ephedra",
+      "kind" : "caution",
+      "left" : [
+        "condition:hypertension",
+        "condition:heartDisease"
+      ],
+      "reason" : "麻黃含麻黃鹼，會升血壓、加快心跳。",
+      "right" : [
+        "herb:麻黃"
+      ],
+      "severity" : 1,
+      "source" : "衛福部中西藥交互作用資料庫；NIH NCCIH — Ephedra",
+      "title" : "高血壓／心臟病遇到麻黃"
+    },
+    {
+      "id" : "cond-kidney-minerals",
+      "kind" : "caution",
+      "left" : [
+        "condition:kidney"
+      ],
+      "reason" : "腎功能不好時這幾種礦物質排不掉，會累積。補充劑、含電解質的飲品都算。",
+      "right" : [
+        "k",
+        "mg",
+        "p"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Potassium、Magnesium、Phosphorus（腎功能不全者警語）",
+      "title" : "腎臟病補鉀、鎂、磷要先問醫師"
+    },
+    {
+      "id" : "cond-kidney-nsaid",
+      "kind" : "caution",
+      "left" : [
+        "condition:kidney"
+      ],
+      "reason" : "NSAID 會減少腎臟血流，腎臟病患者長期或大量使用會讓腎功能更差。止痛請問醫師有沒有替代。",
+      "right" : [
+        "drug:nsaid"
+      ],
+      "severity" : 1,
+      "source" : "FDA NSAID 類藥品標示；MedlinePlus",
+      "title" : "腎臟病遇到消炎止痛藥"
+    },
+    {
+      "id" : "cond-liver-niacin",
+      "kind" : "caution",
+      "left" : [
+        "condition:liver"
+      ],
+      "reason" : "高劑量菸鹼酸（每日數百 mg 以上）有肝功能異常的報告，肝病患者請先問醫師。",
+      "right" : [
+        "form:b3.nicotinicAcid"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Niacin；Linus Pauling Institute",
+      "title" : "肝病遇到菸鹼酸"
+    },
+    {
+      "id" : "cond-liver-vita",
+      "kind" : "caution",
+      "left" : [
+        "condition:liver"
+      ],
+      "reason" : "維生素A 主要儲存在肝臟，長期高劑量會加重肝臟負擔。β-胡蘿蔔素不在此限。",
+      "right" : [
+        "form:vitA.preformed"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Vitamin A",
+      "title" : "肝病遇到既成維生素A"
+    },
+    {
+      "id" : "cond-gout-niacin",
+      "kind" : "caution",
+      "left" : [
+        "condition:gout"
+      ],
+      "reason" : "高劑量菸鹼酸會讓尿酸升高。一般劑量 B 群影響小，高劑量請留意。",
+      "right" : [
+        "b3"
+      ],
+      "severity" : 0,
+      "source" : "Linus Pauling Institute — Niacin",
+      "title" : "痛風遇到菸鹼素"
+    },
+    {
+      "id" : "cond-diabetes-niacin",
+      "kind" : "caution",
+      "left" : [
+        "condition:diabetes"
+      ],
+      "reason" : "高劑量菸鹼酸會讓血糖上升，糖尿病患者服用請追蹤血糖。",
+      "right" : [
+        "form:b3.nicotinicAcid"
+      ],
+      "severity" : 0,
+      "source" : "Linus Pauling Institute — Niacin",
+      "title" : "糖尿病遇到菸鹼酸"
+    },
+    {
+      "id" : "cond-ulcer-nsaid",
+      "kind" : "caution",
+      "left" : [
+        "condition:gastricUlcer"
+      ],
+      "reason" : "NSAID 會傷胃黏膜，有潰瘍病史者出血風險高。需要止痛請問醫師。",
+      "right" : [
+        "drug:nsaid"
+      ],
+      "severity" : 1,
+      "source" : "FDA NSAID 類藥品標示；MedlinePlus",
+      "title" : "胃潰瘍遇到消炎止痛藥"
+    },
+    {
+      "id" : "cond-ulcer-fe",
+      "kind" : "caution",
+      "left" : [
+        "condition:gastricUlcer"
+      ],
+      "reason" : "鐵劑常見腸胃刺激，潰瘍或胃炎者可能更不舒服。改隨餐、分次，或請醫師換劑型。",
+      "right" : [
+        "fe"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Iron",
+      "title" : "胃潰瘍／胃食道逆流補鐵"
+    },
+    {
+      "id" : "cond-bleeding",
+      "kind" : "caution",
+      "left" : [
+        "condition:bleeding"
+      ],
+      "reason" : "這些高劑量會再拉長凝血時間。請告訴醫師你在吃這些，手術或拔牙前先停。",
+      "right" : [
+        "omega3",
+        "ginkgo",
+        "vitE"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Omega-3、Vitamin E",
+      "title" : "有出血傾向，魚油／維生素E／銀杏要留意"
+    },
+    {
+      "id" : "cond-thyroid-iodine",
+      "kind" : "caution",
+      "left" : [
+        "condition:thyroid"
+      ],
+      "reason" : "碘（含海帶、昆布、海藻）可能讓甲亢或甲減惡化，也會影響甲狀腺藥物的效果。",
+      "right" : [
+        "i"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Iodine",
+      "title" : "甲狀腺疾病補碘要先問醫師"
+    },
+    {
+      "id" : "cond-prostate-glaucoma-decongestant",
+      "kind" : "caution",
+      "left" : [
+        "condition:prostate",
+        "condition:glaucoma"
+      ],
+      "reason" : "偽麻黃鹼會讓攝護腺肥大者排尿更困難、青光眼者眼壓升高。",
+      "right" : [
+        "drug:decongestant"
+      ],
+      "severity" : 1,
+      "source" : "MedlinePlus — Pseudoephedrine",
+      "title" : "攝護腺肥大／青光眼遇到鼻塞藥"
+    },
+    {
+      "id" : "cond-osteo-vita",
+      "kind" : "caution",
+      "left" : [
+        "condition:osteoporosis"
+      ],
+      "reason" : "長期高劑量既成維生素A 與骨密度下降、骨折風險有關。β-胡蘿蔔素不在此限。",
+      "right" : [
+        "form:vitA.preformed"
+      ],
+      "severity" : 0,
+      "source" : "NIH ODS — Vitamin A",
+      "title" : "骨質疏鬆遇到既成維生素A"
+    },
+    {
+      "id" : "cond-depression-serotonin",
+      "kind" : "caution",
+      "left" : [
+        "condition:depressionAnxiety"
+      ],
+      "reason" : "跟抗憂鬱劑疊加可能引發血清素症候群。要吃先問身心科醫師。",
+      "right" : [
+        "stjohnswort",
+        "5htp"
+      ],
+      "severity" : 2,
+      "source" : "NIH NCCIH — St. John's Wort",
+      "title" : "身心科用藥中不要自行加聖約翰草、5-HTP"
+    },
+    {
+      "id" : "cond-preg-folate",
+      "kind" : "caution",
+      "left" : [
+        "condition:planningPregnancy"
+      ],
+      "reason" : "國健署建議備孕與懷孕初期每日補充 400 µg 葉酸，預防胎兒神經管缺陷。有補很好，留意總量不要長期超過 1000 µg。",
+      "right" : [
+        "b9"
+      ],
+      "severity" : 0,
+      "source" : "國健署 孕前健康檢查與葉酸建議；NIH ODS — Folate",
+      "title" : "備孕補葉酸是對的"
+    },
+    {
+      "id" : "cond-preg-vita",
+      "kind" : "caution",
+      "left" : [
+        "condition:planningPregnancy",
+        "condition:pregnant"
+      ],
+      "reason" : "既成維生素A 每日超過 3000 µg RE 與胎兒畸形有關。孕期需要的維生素A 從一般飲食和孕婦綜合維他命的劑量就夠；β-胡蘿蔔素不在此限。",
+      "right" : [
+        "form:vitA.preformed"
+      ],
+      "severity" : 1,
+      "source" : "NIH ODS — Vitamin A；國健署 DRIs 第八版",
+      "title" : "備孕／孕期不要吃高劑量既成維生素A"
+    },
+    {
+      "id" : "cond-preg-isotretinoin",
+      "kind" : "caution",
+      "left" : [
+        "condition:planningPregnancy",
+        "condition:pregnant"
+      ],
+      "reason" : "口服 A 酸（isotretinoin）致畸胎風險極高。備孕要先停藥，停藥後至少一個月才能懷孕；acitretin 停藥後要更久。請立刻跟皮膚科醫師確認。",
+      "right" : [
+        "generic:ACITRETIN",
+        "generic:TRETINOIN",
+        "generic:ISOTRETINOIN"
+      ],
+      "severity" : 2,
+      "source" : "食藥署 口服 A 酸用藥安全資訊；FDA iPLEDGE",
+      "title" : "備孕／孕期絕對不能用口服 A 酸"
+    },
+    {
+      "id" : "cond-smoker-betacarotene",
+      "kind" : "caution",
+      "left" : [
+        "condition:smoker"
+      ],
+      "reason" : "兩個大型試驗（ATBC、CARET）裡，吸菸者長期服用高劑量 β-胡蘿蔔素補充劑肺癌風險反而升高。食物裡的不在此限。",
+      "right" : [
+        "form:vitA.betaCarotene"
+      ],
+      "severity" : 1,
+      "source" : "ATBC（1994）、CARET（1996）；NIH ODS — Vitamin A",
+      "title" : "吸菸者不建議高劑量 β-胡蘿蔔素補充劑"
     }
   ],
-  "schema" : 1,
+  "schema" : 2,
   "updatedAt" : "2026-09-05",
-  "version" : 1
+  "version" : 2
 }
