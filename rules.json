@@ -83,6 +83,24 @@
       "note" : "長期高劑量既成維生素A 與骨密度下降有關。"
     },
     {
+      "group" : "重大疾病與治療中",
+      "key" : "cancer",
+      "label" : "癌症／腫瘤治療中",
+      "note" : "化療、放療期間高劑量抗氧化劑與聖約翰草要先問腫瘤科；中藥會對衛福部資料庫比。"
+    },
+    {
+      "group" : "重大疾病與治療中",
+      "key" : "transplant",
+      "label" : "器官移植／免疫抑制治療中",
+      "note" : "聖約翰草會讓抗排斥藥濃度下降。"
+    },
+    {
+      "group" : "重大疾病與治療中",
+      "key" : "epilepsy",
+      "label" : "癲癇（抗癲癇藥中）",
+      "note" : "聖約翰草、銀杏可能影響藥物濃度或發作閾值。"
+    },
+    {
       "group" : "身心",
       "key" : "depressionAnxiety",
       "label" : "憂鬱／焦慮（身心科用藥中）",
@@ -2254,9 +2272,9 @@
       ],
       "reason" : "這些礦物質會綁住甲狀腺素，讓藥效變差。藥通常早上空腹先吃，礦物質移到中午以後。",
       "right" : [
+        "mg",
         "fe",
-        "ca",
-        "mg"
+        "ca"
       ],
       "severity" : 2,
       "source" : "食藥署用藥安全／NIH ODS — Calcium",
@@ -2271,10 +2289,10 @@
       ],
       "reason" : "四環黴素、喹諾酮類會被鈣鎂鐵鋅螯合，一起吃藥效大減。以藥師指示為準。",
       "right" : [
-        "fe",
-        "zn",
         "ca",
-        "mg"
+        "mg",
+        "fe",
+        "zn"
       ],
       "severity" : 2,
       "source" : "食藥署用藥安全／NIH ODS",
@@ -2304,9 +2322,9 @@
       ],
       "reason" : "雙磷酸鹽吸收極差，跟鈣鎂鐵一起幾乎吸收不到。早上空腹先吃藥，至少 30 分鐘後再吃別的。",
       "right" : [
-        "ca",
         "mg",
-        "fe"
+        "fe",
+        "ca"
       ],
       "severity" : 2,
       "source" : "藥品仿單（Fosamax 等）",
@@ -2334,9 +2352,9 @@
       ],
       "reason" : "這些都會再拉長凝血時間，高劑量時出血風險上升。請告訴醫師你在吃這些。",
       "right" : [
+        "ginkgo",
         "omega3",
-        "vitE",
-        "ginkgo"
+        "vitE"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Omega-3、Vitamin E",
@@ -2364,8 +2382,8 @@
       ],
       "reason" : "血清素疊加可能引發血清素症候群（心跳快、發抖、意識混亂）。這一條是「不要」，不是「分開」。先問身心科醫師。",
       "right" : [
-        "5htp",
-        "stjohnswort"
+        "stjohnswort",
+        "5htp"
       ],
       "severity" : 2,
       "source" : "NIH NCCIH — St. John's Wort",
@@ -2379,8 +2397,8 @@
       ],
       "reason" : "鎮靜作用相加，白天可能昏沉、跌倒風險上升。要併用請告訴醫師。",
       "right" : [
-        "valerian",
-        "melatonin"
+        "melatonin",
+        "valerian"
       ],
       "severity" : 1,
       "source" : "NIH NCCIH — Melatonin",
@@ -2423,8 +2441,8 @@
       "reason" : "胃酸變少，這幾樣吸收都會變差。長期使用者補充是常見做法，定期檢驗比較安心。",
       "right" : [
         "mg",
-        "ca",
-        "b12"
+        "b12",
+        "ca"
       ],
       "severity" : 0,
       "source" : "FDA Drug Safety Communication（PPI 低血鎂）",
@@ -2481,8 +2499,8 @@
       ],
       "reason" : "鎮靜作用相加，白天可能更昏沉。要併用請告訴醫師。",
       "right" : [
-        "melatonin",
-        "valerian"
+        "valerian",
+        "melatonin"
       ],
       "severity" : 1,
       "source" : "NIH NCCIH — Melatonin",
@@ -2613,8 +2631,8 @@
       ],
       "reason" : "腎功能不好時這幾種礦物質排不掉，會累積。補充劑、含電解質的飲品都算。",
       "right" : [
-        "k",
         "mg",
+        "k",
         "p"
       ],
       "severity" : 1,
@@ -2840,6 +2858,69 @@
       "title" : "備孕／孕期絕對不能用口服 A 酸"
     },
     {
+      "id" : "cond-cancer-antioxidant",
+      "kind" : "caution",
+      "left" : [
+        "condition:cancer"
+      ],
+      "reason" : "化療與放療部分是靠氧化壓力殺癌細胞，高劑量抗氧化補充劑（維生素C、E、硒、β-胡蘿蔔素、Q10）可能干擾療效，證據尚不一致。一般劑量的綜合維他命通常沒問題，高劑量請先問腫瘤科醫師。",
+      "right" : [
+        "vitC",
+        "form:vitA.betaCarotene",
+        "coq10",
+        "vitE",
+        "se"
+      ],
+      "severity" : 1,
+      "source" : "美國 NCI PDQ — Antioxidants and Cancer Prevention；American Cancer Society",
+      "title" : "癌症治療中的高劑量抗氧化劑先問腫瘤科"
+    },
+    {
+      "id" : "cond-cancer-sjw",
+      "kind" : "caution",
+      "left" : [
+        "condition:epilepsy",
+        "condition:transplant",
+        "condition:cancer"
+      ],
+      "reason" : "聖約翰草會加速肝臟代謝（CYP3A4、P-gp），讓化療藥（irinotecan、imatinib）、抗排斥藥（ciclosporin、tacrolimus）、部分抗癲癇藥的血中濃度下降，有排斥與治療失敗的報告。",
+      "right" : [
+        "stjohnswort"
+      ],
+      "severity" : 2,
+      "source" : "NIH NCCIH — St. John's Wort and Depression（藥物交互作用）；FDA 藥品標示",
+      "title" : "治療中不要自行吃聖約翰草"
+    },
+    {
+      "id" : "cond-epilepsy-ginkgo",
+      "kind" : "caution",
+      "left" : [
+        "condition:epilepsy"
+      ],
+      "reason" : "銀杏（尤其種子成分）有誘發癲癇發作、降低抗癲癇藥濃度的個案報告。",
+      "right" : [
+        "ginkgo"
+      ],
+      "severity" : 1,
+      "source" : "NIH NCCIH — Ginkgo；MedlinePlus",
+      "title" : "癲癇遇到銀杏"
+    },
+    {
+      "id" : "antineoplastic-sjw",
+      "kind" : "caution",
+      "left" : [
+        "drug:antineoplastic",
+        "drug:immunosuppressant"
+      ],
+      "reason" : "聖約翰草加速這些藥的代謝，血中濃度下降。這一條是「不要」。先問醫師。",
+      "right" : [
+        "stjohnswort"
+      ],
+      "severity" : 2,
+      "source" : "NIH NCCIH — St. John's Wort；FDA 藥品標示",
+      "title" : "化療藥／抗排斥藥不要配聖約翰草"
+    },
+    {
       "id" : "cond-smoker-betacarotene",
       "kind" : "caution",
       "left" : [
@@ -2856,5 +2937,5 @@
   ],
   "schema" : 2,
   "updatedAt" : "2026-09-05",
-  "version" : 2
+  "version" : 3
 }
