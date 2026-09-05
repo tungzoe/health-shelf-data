@@ -17,7 +17,7 @@ RAW = "https://raw.githubusercontent.com/tungzoe/health-shelf-data/main/"
 TODAY = datetime.date.today().isoformat()
 
 # 資料改了就 +1。schema 是格式版本，App 不認識的格式會整份略過。
-VERSIONS = {"drugs-tw": 1, "tcm-formulas": 1, "herb-drug-tw": 1}
+VERSIONS = {"drugs-tw": 1, "tcm-formulas": 1, "herb-drug-tw": 1, "tcm-products": 1}
 
 
 def dump(name, obj):
@@ -264,9 +264,114 @@ def build_herb_drug(formula_names, herb_names):
     print(f"herb-drug: kept {len(rules)} of {len(lst)}")
 
 
+
+# ---------------------------------------------------------------- 中藥許可證（產品層級）
+
+# 衛福部中醫藥司「中藥許可證查詢」網站的匯出檔（要驗證碼，使用者自己匯出後放 work/tcm-licenses.xls）。
+# 每列：許可證字號、藥品名稱、劑型與類別、適應症及效能、處方成分、注意事項、有效期限。
+TCM_HERB_RE = re.compile(r"([一-鿿][一-鿿、]{0,14}?)\s*[\(（]\s*([\d\.]+)\s*(mg|gm|g|公克|毫克|ml|mL|克)\s*[\)）]", re.I)
+# 賦形劑、副料、單位字，不是藥
+TCM_EXCIPIENT = {"澱粉", "蜂蜜", "砂糖", "白糖", "蔗糖", "乳糖", "糊精", "玉米澱粉", "馬鈴薯澱粉", "麥芽糊精", "滑石粉", "硬脂酸鎂", "微晶纖維素",
+                 "羧甲基纖維素鈣", "羧甲基纖維素鈉", "二氧化矽", "滑石", "蜜", "煉蜜", "酒精", "乙醇", "水", "純水", "精製水", "食用色素", "香料", "每丸", "每包", "每錠", "每粒"}
+TCM_ORAL_FORMS = ("顆粒", "散", "丸", "錠", "膠囊", "液", "膏", "飲", "糖漿", "酒", "露", "丹", "煎")
+TCM_NAME_SUFFIX = sorted(["濃縮顆粒劑", "濃縮顆粒", "濃縮散劑", "濃縮散", "濃縮錠劑", "濃縮錠", "濃縮膠囊", "濃縮細粒", "顆粒劑", "顆粒", "細粒", "散劑", "丸劑", "錠劑", "膠囊劑", "膠囊",
+                          "內服液劑", "口服液", "液劑", "糖漿", "膏劑", "煎劑", "水丸", "蜜丸", "糊丸", "小丸", "大丸"], key=len, reverse=True)
+
+
+def tcm_base_name(raw):
+    """'“順天堂”洗肝明目散顆粒' → '洗肝明目散'；'滋陽顆粒（茯菟丹）' → '滋陽'（括號別名另外回）"""
+    n = raw.replace("\r\n", "\n").split("\n")[0].strip()
+    # 廠牌寫在各種引號裡：“順天堂”、〝津村〞、''三才堂"、"科達"
+    Q = "“”\"〝〞「」『』‘’'"
+    n = re.sub(rf"^[{Q}]+[^{Q}]{{1,14}}[{Q}]+\s*", "", n)
+    n = re.sub(rf"[{Q}]", "", n)
+    n = n.replace("﹙", "(").replace("﹚", ")")
+    aliases = [a for a in re.findall(r"[（(]([一-鿿]{2,12})[)）]", n)]
+    n = re.sub(r"[（(].*?[)）]", "", n).strip()
+    for _ in range(2):
+        for suf in TCM_NAME_SUFFIX:
+            if n.endswith(suf) and len(n) > len(suf) + 1:
+                n = n[: -len(suf)]
+                break
+    n = re.sub(r"[\s\-－]+$", "", n)
+    return n, aliases
+
+
+def build_tcm_products(known_herbs=frozenset()):
+    path = os.path.join(WORK, "tcm-licenses.xls")
+    if not os.path.exists(path):
+        print("沒有 work/tcm-licenses.xls，跳過 tcm-products")
+        return
+    import xlrd
+    sh = xlrd.open_workbook(path).sheets()[0]
+    groups = {}
+    skipped = 0
+    for r in range(1, sh.nrows):
+        lic, name, formcat, ind, rx, warn, exp = [str(x) for x in sh.row_values(r)]
+        parts = [x.strip() for x in formcat.replace("\r\n", "\n").split("\n") if x.strip()]
+        form, cat = (parts[0], parts[-1]) if parts else ("", "")
+        # 外用（藥膠布、油膏、外用液）與原料藥不會出現在藥袋裡
+        if cat == "原料藥" or not any(k in form for k in TCM_ORAL_FORMS) or "外用" in form or "膠布" in form or "油膏" in form:
+            skipped += 1
+            continue
+        herbs = []
+        for h, a, u in TCM_HERB_RE.findall(rx):
+            h = h.strip("、 ")
+            if not h or h in TCM_EXCIPIENT or h.startswith("每"):
+                continue
+            if h not in herbs:
+                herbs.append(h)
+        if not herbs:
+            skipped += 1
+            continue
+        base, aliases = tcm_base_name(name)
+        if len(base) < 2:
+            skipped += 1
+            continue
+        key = (base, tuple(herbs))
+        g = groups.setdefault(key, {"n": base, "a": [], "h": herbs, "f": [], "c": [], "ind": "", "fx": "", "warn": "", "lic": [], "licCount": 0})
+        for al in aliases:
+            if al not in g["a"] and al != base:
+                g["a"].append(al)
+        if form and form not in g["f"]:
+            g["f"].append(form)
+        if cat and cat not in g["c"]:
+            g["c"].append(cat)
+        text = ind.replace("\r\n", "\n")
+        m_ind = re.search(r"適應症[：:]\s*(.+)", text)
+        m_fx = re.search(r"效能[：:]\s*(.+)", text)
+        if not g["ind"] and m_ind:
+            g["ind"] = clean(m_ind.group(1))[:120]
+        if not g["fx"] and m_fx:
+            g["fx"] = clean(m_fx.group(1))[:80]
+        if not g["warn"] and warn.strip():
+            g["warn"] = clean(warn)[:160]
+        if len(g["lic"]) < 3:
+            g["lic"].append(lic)
+        g["licCount"] += 1
+    products = []
+    for g in groups.values():
+        hk = []
+        for h in g["h"]:
+            for k in herb_keys(h, known_herbs):
+                if k not in hk:
+                    hk.append(k)
+        g["hk"] = hk
+        g["f"] = "、".join(g["f"][:3])
+        g["c"] = "、".join(g["c"][:2])
+        products.append(g)
+    products.sort(key=lambda g: (g["n"], -g["licCount"]))
+    obj = {"schema": 1, "version": VERSIONS["tcm-products"], "updatedAt": TODAY,
+           "source": "衛生福利部中醫藥司 中藥許可證查詢（2026-09-05 匯出）",
+           "license": "政府網站資料開放宣告",
+           "note": f"同名、同組成的許可證合併成一筆；略過外用劑、原料藥、沒有處方成分的 {skipped} 筆。h 是處方成分（去賦形劑）、hk 是比對用藥名。",
+           "products": products}
+    dump("tcm-products.json", obj)
+    print(f"tcm-products: {len(products)} 筆（原 {sh.nrows - 1} 張許可證）")
+
 # ---------------------------------------------------------------- manifest
 
-KINDS = {"rules": "rules", "drugs-tw": "drugIndex", "tcm-formulas": "tcmFormulas", "herb-drug-tw": "herbDrugInteractions"}
+KINDS = {"rules": "rules", "drugs-tw": "drugIndex", "tcm-formulas": "tcmFormulas", "herb-drug-tw": "herbDrugInteractions", "tcm-products": "tcmProducts"}
 
 
 def build_manifest():
@@ -295,4 +400,5 @@ if __name__ == "__main__":
     cmdhi_herbs = {re.sub(r"《.*?》|（丸）|\(丸\)|\s", "", it["herb"]) for it in json.load(open(os.path.join(WORK, "cmdhi_list.json"), encoding="utf-8"))}
     formulas, herbs = build_tcm(frozenset(cmdhi_herbs))
     build_herb_drug({f["n"] for f in formulas} | {a for f in formulas for a in f["a"]}, herbs)
+    build_tcm_products(frozenset(cmdhi_herbs))
     build_manifest()
