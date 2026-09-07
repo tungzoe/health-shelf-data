@@ -2080,6 +2080,171 @@
     },
     {
       "aliases" : [
+        "蛋白質",
+        "protein",
+        "乳清蛋白",
+        "乳清",
+        "wheyprotein",
+        "whey",
+        "分離乳清",
+        "濃縮乳清",
+        "水解乳清",
+        "大豆蛋白",
+        "soyprotein",
+        "豌豆蛋白",
+        "peaprotein",
+        "酪蛋白",
+        "casein",
+        "植物蛋白",
+        "たんぱく質",
+        "タンパク質",
+        "プロテイン",
+        "ホエイ",
+        "단백질",
+        "프로틴",
+        "유청"
+      ],
+      "en" : "Protein",
+      "groups" : {
+        "adult" : {
+          "f" : 60,
+          "m" : 70
+        },
+        "lactationAdd" : 15,
+        "pregnancyAdd" : [
+          10,
+          10,
+          10
+        ]
+      },
+      "key" : "protein",
+      "note" : "國健署第八版建議一般成人每日 1.1 g／公斤體重（約男 70 g、女 60 g），70 歲以上 1.2 g／公斤；沒有訂上限。腎功能不佳者的蛋白質攝取要由醫師或營養師決定。",
+      "rda" : 60,
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "g",
+      "zh" : "蛋白質"
+    },
+    {
+      "aliases" : [
+        "膠原蛋白",
+        "膠原蛋白胜肽",
+        "膠原胜肽",
+        "collagen",
+        "collagenpeptide",
+        "hydrolyzedcollagen",
+        "コラーゲン",
+        "콜라겐"
+      ],
+      "en" : "Collagen",
+      "key" : "collagen",
+      "note" : "本身就是蛋白質，但缺少必需胺基酸，不算進蛋白質的建議量。沒有訂上限。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "g",
+      "zh" : "膠原蛋白"
+    },
+    {
+      "aliases" : [
+        "bcaa",
+        "支鏈胺基酸",
+        "支鏈氨基酸",
+        "白胺酸",
+        "亮胺酸",
+        "leucine",
+        "l-leucine",
+        "異白胺酸",
+        "isoleucine",
+        "l-isoleucine",
+        "纈胺酸",
+        "valine",
+        "l-valine",
+        "ロイシン",
+        "イソロイシン",
+        "バリン",
+        "류신",
+        "이소류신",
+        "발린"
+      ],
+      "en" : "BCAA",
+      "key" : "bcaa",
+      "note" : "白胺酸、異白胺酸、纈胺酸三種合計。沒有訂上限；腎臟病、肝病與楓糖尿症患者要先問醫師。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "g",
+      "zh" : "支鏈胺基酸（BCAA）"
+    },
+    {
+      "aliases" : [
+        "麩醯胺酸",
+        "麩醯胺",
+        "左旋麩醯胺酸",
+        "glutamine",
+        "l-glutamine",
+        "グルタミン",
+        "글루타민"
+      ],
+      "en" : "Glutamine",
+      "key" : "glutamine",
+      "note" : "沒有訂上限。腎臟病、肝病患者要先問醫師；癌症治療中使用請跟腫瘤科確認。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "g",
+      "zh" : "麩醯胺酸"
+    },
+    {
+      "aliases" : [
+        "精胺酸",
+        "精氨酸",
+        "左旋精胺酸",
+        "arginine",
+        "l-arginine",
+        "aakg",
+        "アルギニン",
+        "아르기닌"
+      ],
+      "en" : "Arginine",
+      "key" : "arginine",
+      "note" : "沒有訂上限。會擴張血管，與降血壓藥、硝酸鹽類心臟藥併用要告知醫師；皰疹病毒帶原者可能誘發發作。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "g",
+      "zh" : "精胺酸"
+    },
+    {
+      "aliases" : [
+        "肌酸",
+        "一水肌酸",
+        "creatine",
+        "creatinemonohydrate",
+        "クレアチン",
+        "크레아틴"
+      ],
+      "en" : "Creatine",
+      "key" : "creatine",
+      "note" : "沒有訂上限；常見維持劑量每日 3–5 g。會讓血中肌酸酐上升、影響腎功能檢驗值的判讀，腎臟病患者要先問醫師。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "g",
+      "zh" : "肌酸"
+    },
+    {
+      "aliases" : [
+        "牛磺酸",
+        "taurine",
+        "タウリン",
+        "타우린"
+      ],
+      "en" : "Taurine",
+      "key" : "taurine",
+      "note" : "沒有訂上限。能量飲料常含 1000 mg 上下，跟補充劑會加總。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "牛磺酸"
+    },
+    {
+      "aliases" : [
         "聖約翰草",
         "金絲桃",
         "st.john'swort",
@@ -2278,9 +2443,9 @@
       ],
       "reason" : "這些礦物質會綁住甲狀腺素，讓藥效變差。藥通常早上空腹先吃，礦物質移到中午以後。",
       "right" : [
-        "fe",
+        "mg",
         "ca",
-        "mg"
+        "fe"
       ],
       "severity" : 2,
       "source" : "食藥署用藥安全／NIH ODS — Calcium",
@@ -2295,8 +2460,8 @@
       ],
       "reason" : "四環黴素、喹諾酮類會被鈣鎂鐵鋅螯合，一起吃藥效大減。以藥師指示為準。",
       "right" : [
-        "fe",
         "zn",
+        "fe",
         "ca",
         "mg"
       ],
@@ -2328,8 +2493,8 @@
       ],
       "reason" : "雙磷酸鹽吸收極差，跟鈣鎂鐵一起幾乎吸收不到。早上空腹先吃藥，至少 30 分鐘後再吃別的。",
       "right" : [
-        "fe",
         "ca",
+        "fe",
         "mg"
       ],
       "severity" : 2,
@@ -2359,8 +2524,8 @@
       "reason" : "這些都會再拉長凝血時間，高劑量時出血風險上升。請告訴醫師你在吃這些。",
       "right" : [
         "omega3",
-        "ginkgo",
-        "vitE"
+        "vitE",
+        "ginkgo"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Omega-3、Vitamin E",
@@ -2388,8 +2553,8 @@
       ],
       "reason" : "血清素疊加可能引發血清素症候群（心跳快、發抖、意識混亂）。這一條是「不要」，不是「分開」。先問身心科醫師。",
       "right" : [
-        "5htp",
-        "stjohnswort"
+        "stjohnswort",
+        "5htp"
       ],
       "severity" : 2,
       "source" : "NIH NCCIH — St. John's Wort",
@@ -2403,8 +2568,8 @@
       ],
       "reason" : "鎮靜作用相加，白天可能昏沉、跌倒風險上升。要併用請告訴醫師。",
       "right" : [
-        "melatonin",
-        "valerian"
+        "valerian",
+        "melatonin"
       ],
       "severity" : 1,
       "source" : "NIH NCCIH — Melatonin",
@@ -2446,9 +2611,9 @@
       ],
       "reason" : "胃酸變少，這幾樣吸收都會變差。長期使用者補充是常見做法，定期檢驗比較安心。",
       "right" : [
-        "mg",
         "ca",
-        "b12"
+        "b12",
+        "mg"
       ],
       "severity" : 0,
       "source" : "FDA Drug Safety Communication（PPI 低血鎂）",
@@ -2563,8 +2728,8 @@
       ],
       "reason" : "排鉀型利尿劑會讓血鉀、血鎂流失，補充常是醫師開的；保鉀型則相反。哪一種、要不要補，以醫師為準。",
       "right" : [
-        "k",
-        "mg"
+        "mg",
+        "k"
       ],
       "severity" : 0,
       "source" : "NIH ODS — Potassium、Magnesium",
@@ -2589,8 +2754,8 @@
       "id" : "cond-htn-decongestant",
       "kind" : "caution",
       "left" : [
-        "condition:heartDisease",
-        "condition:hypertension"
+        "condition:hypertension",
+        "condition:heartDisease"
       ],
       "reason" : "偽麻黃鹼、麻黃鹼類會收縮血管、升血壓、加快心跳。感冒藥、鼻炎藥常含這類成分，請藥師選不含的。",
       "right" : [
@@ -2637,13 +2802,31 @@
       ],
       "reason" : "腎功能不好時這幾種礦物質排不掉，會累積。補充劑、含電解質的飲品都算。",
       "right" : [
-        "k",
         "mg",
+        "k",
         "p"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Potassium、Magnesium、Phosphorus（腎功能不全者警語）",
       "title" : "腎臟病補鉀、鎂、磷要先問醫師"
+    },
+    {
+      "id" : "cond-kidney-protein",
+      "kind" : "caution",
+      "left" : [
+        "condition:kidney"
+      ],
+      "reason" : "腎功能不好時蛋白質的代謝產物（尿素、肌酸酐）排不掉；慢性腎臟病常需要限制蛋白質，乳清、BCAA 這類補充劑的量會直接加上去。肌酸還會讓肌酸酐檢驗值上升，讓腎功能看起來更差。",
+      "right" : [
+        "arginine",
+        "creatine",
+        "bcaa",
+        "glutamine",
+        "protein"
+      ],
+      "severity" : 1,
+      "source" : "KDOQI 2020 慢性腎臟病營養臨床指引（非透析 CKD 3–5 期蛋白質 0.55–0.6 g/kg）；NIH ODS — Dietary Supplements for Exercise and Athletic Performance（creatine）",
+      "title" : "腎臟病補蛋白質、胺基酸、肌酸要先問醫師"
     },
     {
       "id" : "cond-kidney-nsaid",
@@ -2751,9 +2934,9 @@
       ],
       "reason" : "這些高劑量會再拉長凝血時間。請告訴醫師你在吃這些，手術或拔牙前先停。",
       "right" : [
-        "omega3",
+        "ginkgo",
         "vitE",
-        "ginkgo"
+        "omega3"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Omega-3、Vitamin E",
@@ -2777,8 +2960,8 @@
       "id" : "cond-prostate-glaucoma-decongestant",
       "kind" : "caution",
       "left" : [
-        "condition:glaucoma",
-        "condition:prostate"
+        "condition:prostate",
+        "condition:glaucoma"
       ],
       "reason" : "偽麻黃鹼會讓攝護腺肥大者排尿更困難、青光眼者眼壓升高。",
       "right" : [
@@ -2835,8 +3018,8 @@
       "id" : "cond-preg-vita",
       "kind" : "caution",
       "left" : [
-        "condition:planningPregnancy",
-        "condition:pregnant"
+        "condition:pregnant",
+        "condition:planningPregnancy"
       ],
       "reason" : "既成維生素A 每日超過 3000 µg RE 與胎兒畸形有關。孕期需要的維生素A 從一般飲食和孕婦綜合維他命的劑量就夠；β-胡蘿蔔素不在此限。",
       "right" : [
@@ -2855,9 +3038,9 @@
       ],
       "reason" : "口服 A 酸（isotretinoin）致畸胎風險極高。備孕要先停藥，停藥後至少一個月才能懷孕；acitretin 停藥後要更久。請立刻跟皮膚科醫師確認。",
       "right" : [
+        "generic:ISOTRETINOIN",
         "generic:TRETINOIN",
-        "generic:ACITRETIN",
-        "generic:ISOTRETINOIN"
+        "generic:ACITRETIN"
       ],
       "severity" : 2,
       "source" : "食藥署 口服 A 酸用藥安全資訊；FDA iPLEDGE",
@@ -2871,11 +3054,11 @@
       ],
       "reason" : "化療與放療部分是靠氧化壓力殺癌細胞，高劑量抗氧化補充劑（維生素C、E、硒、β-胡蘿蔔素、Q10）可能干擾療效，證據尚不一致。一般劑量的綜合維他命通常沒問題，高劑量請先問腫瘤科醫師。",
       "right" : [
-        "se",
-        "coq10",
         "form:vitA.betaCarotene",
-        "vitE",
-        "vitC"
+        "coq10",
+        "vitC",
+        "se",
+        "vitE"
       ],
       "severity" : 1,
       "source" : "美國 NCI PDQ — Antioxidants and Cancer Prevention；American Cancer Society",
@@ -2885,9 +3068,9 @@
       "id" : "cond-cancer-sjw",
       "kind" : "caution",
       "left" : [
-        "condition:epilepsy",
+        "condition:cancer",
         "condition:transplant",
-        "condition:cancer"
+        "condition:epilepsy"
       ],
       "reason" : "聖約翰草會加速肝臟代謝（CYP3A4、P-gp），讓化療藥（irinotecan、imatinib）、抗排斥藥（ciclosporin、tacrolimus）、部分抗癲癇藥的血中濃度下降，有排斥與治療失敗的報告。",
       "right" : [
@@ -2915,8 +3098,8 @@
       "id" : "antineoplastic-sjw",
       "kind" : "caution",
       "left" : [
-        "drug:immunosuppressant",
-        "drug:antineoplastic"
+        "drug:antineoplastic",
+        "drug:immunosuppressant"
       ],
       "reason" : "聖約翰草加速這些藥的代謝，血中濃度下降。這一條是「不要」。先問醫師。",
       "right" : [
@@ -2942,6 +3125,6 @@
     }
   ],
   "schema" : 2,
-  "updatedAt" : "2026-09-05",
-  "version" : 4
+  "updatedAt" : "2026-09-07",
+  "version" : 5
 }
