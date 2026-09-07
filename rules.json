@@ -1162,6 +1162,8 @@
       "aliases" : [
         "平均紅血球體積",
         "紅血球平均體積",
+        "平均紅血球容積",
+        "紅血球平均容積",
         "mean corpuscular volume",
         "mcv"
       ],
@@ -1433,7 +1435,7 @@
       "nutrientsWhenLow" : [
 
       ],
-      "zh" : "腎絲球過濾率（eGFR）"
+      "zh" : "腎絲球過濾率"
     },
     {
       "aliases" : [
@@ -1560,6 +1562,8 @@
         "glycohemoglobin",
         "hba1c",
         "hb a1c",
+        "hbalc",
+        "hbaic",
         "a1c"
       ],
       "conditionHint" : {
@@ -3728,5 +3732,5 @@
   ],
   "schema" : 2,
   "updatedAt" : "2026-09-07",
-  "version" : 8
+  "version" : 9
 }
