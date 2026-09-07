@@ -1137,6 +1137,279 @@
       "zh" : "甲基葉酸（5-MTHF）"
     }
   ],
+  "labItems" : [
+    {
+      "aliases" : [
+        "血紅素",
+        "血色素",
+        "hemoglobin",
+        "haemoglobin",
+        "hgb",
+        "hb"
+      ],
+      "en" : "Hemoglobin",
+      "key" : "hb",
+      "note" : "偏低不一定是缺鐵，B12、葉酸不足或其他原因也會；要看鐵蛋白與 MCV 一起判斷。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+        "fe"
+      ],
+      "zh" : "血紅素"
+    },
+    {
+      "aliases" : [
+        "平均紅血球體積",
+        "紅血球平均體積",
+        "mean corpuscular volume",
+        "mcv"
+      ],
+      "en" : "MCV",
+      "key" : "mcv",
+      "note" : "紅血球偏小常見於缺鐵，偏大常見於 B12 或葉酸不足。",
+      "nutrientsWhenHigh" : [
+        "b12",
+        "b9"
+      ],
+      "nutrientsWhenLow" : [
+        "fe"
+      ],
+      "zh" : "平均紅血球體積"
+    },
+    {
+      "aliases" : [
+        "鐵蛋白",
+        "儲鐵蛋白",
+        "ferritin"
+      ],
+      "en" : "Ferritin",
+      "key" : "ferritin",
+      "note" : "身體存鐵量的指標。偏高不代表鐵太多，發炎、肝病也會讓它升高。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+        "fe"
+      ],
+      "zh" : "鐵蛋白"
+    },
+    {
+      "aliases" : [
+        "血清鐵",
+        "serum iron",
+        "iron",
+        "fe"
+      ],
+      "en" : "Serum iron",
+      "key" : "iron",
+      "note" : "一天之內會浮動，單看這一項不準。",
+      "nutrientsWhenHigh" : [
+        "fe"
+      ],
+      "nutrientsWhenLow" : [
+        "fe"
+      ],
+      "zh" : "血清鐵"
+    },
+    {
+      "aliases" : [
+        "25-oh vitamin d",
+        "25-oh-vitamin d",
+        "25(oh)d",
+        "25-oh-d",
+        "25-hydroxyvitamin d",
+        "維生素d",
+        "維他命d",
+        "vitamin d",
+        "vit d",
+        "vit.d",
+        "vit-d"
+      ],
+      "en" : "25-OH Vitamin D",
+      "key" : "vitD",
+      "nutrientsWhenHigh" : [
+        "vitD"
+      ],
+      "nutrientsWhenLow" : [
+        "vitD"
+      ],
+      "zh" : "維生素D（25-OH）"
+    },
+    {
+      "aliases" : [
+        "維生素b12",
+        "維他命b12",
+        "vitamin b12",
+        "vit b12",
+        "vit.b12",
+        "cobalamin",
+        "b12"
+      ],
+      "en" : "Vitamin B12",
+      "key" : "b12",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+        "b12"
+      ],
+      "zh" : "維生素B12"
+    },
+    {
+      "aliases" : [
+        "葉酸",
+        "folate",
+        "folic acid"
+      ],
+      "en" : "Folate",
+      "key" : "folate",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+        "b9"
+      ],
+      "zh" : "葉酸"
+    },
+    {
+      "aliases" : [
+        "白蛋白",
+        "albumin",
+        "alb"
+      ],
+      "en" : "Albumin",
+      "key" : "albumin",
+      "note" : "偏低跟蛋白質攝取不足有關，但肝病、腎病、發炎也會讓它降。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+        "protein"
+      ],
+      "zh" : "白蛋白"
+    },
+    {
+      "aliases" : [
+        "總蛋白質",
+        "總蛋白",
+        "total protein",
+        "t-protein",
+        "t.protein",
+        "tp"
+      ],
+      "en" : "Total protein",
+      "key" : "totalProtein",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+        "protein"
+      ],
+      "zh" : "總蛋白"
+    },
+    {
+      "aliases" : [
+        "鈣",
+        "calcium",
+        "ca"
+      ],
+      "en" : "Calcium",
+      "key" : "calcium",
+      "note" : "偏高時鈣片跟維生素D 都要先停下來問醫師。",
+      "nutrientsWhenHigh" : [
+        "ca",
+        "vitD"
+      ],
+      "nutrientsWhenLow" : [
+        "ca",
+        "vitD"
+      ],
+      "zh" : "鈣"
+    },
+    {
+      "aliases" : [
+        "鎂",
+        "magnesium",
+        "mg"
+      ],
+      "en" : "Magnesium",
+      "key" : "magnesium",
+      "nutrientsWhenHigh" : [
+        "mg"
+      ],
+      "nutrientsWhenLow" : [
+        "mg"
+      ],
+      "zh" : "鎂"
+    },
+    {
+      "aliases" : [
+        "鋅",
+        "zinc",
+        "zn"
+      ],
+      "en" : "Zinc",
+      "key" : "zinc",
+      "nutrientsWhenHigh" : [
+        "zn"
+      ],
+      "nutrientsWhenLow" : [
+        "zn"
+      ],
+      "zh" : "鋅"
+    },
+    {
+      "aliases" : [
+        "鉀",
+        "potassium",
+        "k"
+      ],
+      "en" : "Potassium",
+      "key" : "potassium",
+      "note" : "偏高時含鉀的補充劑與電解質飲品要先停，問醫師。",
+      "nutrientsWhenHigh" : [
+        "k"
+      ],
+      "nutrientsWhenLow" : [
+        "k"
+      ],
+      "zh" : "鉀"
+    },
+    {
+      "aliases" : [
+        "鈉",
+        "sodium",
+        "na"
+      ],
+      "en" : "Sodium",
+      "key" : "sodium",
+      "nutrientsWhenHigh" : [
+        "na"
+      ],
+      "nutrientsWhenLow" : [
+
+      ],
+      "zh" : "鈉"
+    },
+    {
+      "aliases" : [
+        "磷",
+        "phosphorus",
+        "phosphate",
+        "p"
+      ],
+      "en" : "Phosphorus",
+      "key" : "phosphorus",
+      "nutrientsWhenHigh" : [
+        "p"
+      ],
+      "nutrientsWhenLow" : [
+        "p"
+      ],
+      "zh" : "磷"
+    }
+  ],
   "nutrients" : [
     {
       "aliases" : [
@@ -2579,10 +2852,10 @@
       ],
       "reason" : "四環黴素、喹諾酮類會被鈣鎂鐵鋅螯合，一起吃藥效大減。以藥師指示為準。",
       "right" : [
-        "zn",
+        "ca",
         "fe",
         "mg",
-        "ca"
+        "zn"
       ],
       "severity" : 2,
       "source" : "食藥署用藥安全／NIH ODS",
@@ -2613,8 +2886,8 @@
       "reason" : "雙磷酸鹽吸收極差，跟鈣鎂鐵一起幾乎吸收不到。早上空腹先吃藥，至少 30 分鐘後再吃別的。",
       "right" : [
         "ca",
-        "mg",
-        "fe"
+        "fe",
+        "mg"
       ],
       "severity" : 2,
       "source" : "藥品仿單（Fosamax 等）",
@@ -2643,8 +2916,8 @@
       "reason" : "這些都會再拉長凝血時間，高劑量時出血風險上升。請告訴醫師你在吃這些。",
       "right" : [
         "ginkgo",
-        "vitE",
-        "omega3"
+        "omega3",
+        "vitE"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Omega-3、Vitamin E",
@@ -2687,8 +2960,8 @@
       ],
       "reason" : "鎮靜作用相加，白天可能昏沉、跌倒風險上升。要併用請告訴醫師。",
       "right" : [
-        "valerian",
-        "melatonin"
+        "melatonin",
+        "valerian"
       ],
       "severity" : 1,
       "source" : "NIH NCCIH — Melatonin",
@@ -2730,9 +3003,9 @@
       ],
       "reason" : "胃酸變少，這幾樣吸收都會變差。長期使用者補充是常見做法，定期檢驗比較安心。",
       "right" : [
+        "b12",
         "ca",
-        "mg",
-        "b12"
+        "mg"
       ],
       "severity" : 0,
       "source" : "FDA Drug Safety Communication（PPI 低血鎂）",
@@ -2832,8 +3105,8 @@
       ],
       "reason" : "血清素疊加可能引發血清素症候群。這一條是「不要」。先問醫師。",
       "right" : [
-        "stjohnswort",
-        "5htp"
+        "5htp",
+        "stjohnswort"
       ],
       "severity" : 2,
       "source" : "NIH NCCIH — St. John's Wort",
@@ -2862,8 +3135,8 @@
       ],
       "reason" : "類固醇長期使用會讓骨質流失，補鈣與維生素D 是常見的保護措施。劑量請問醫師。",
       "right" : [
-        "vitD",
-        "ca"
+        "ca",
+        "vitD"
       ],
       "severity" : 0,
       "source" : "NIH ODS — Calcium",
@@ -2873,8 +3146,8 @@
       "id" : "cond-htn-decongestant",
       "kind" : "caution",
       "left" : [
-        "condition:hypertension",
-        "condition:heartDisease"
+        "condition:heartDisease",
+        "condition:hypertension"
       ],
       "reason" : "偽麻黃鹼、麻黃鹼類會收縮血管、升血壓、加快心跳。感冒藥、鼻炎藥常含這類成分，請藥師選不含的。",
       "right" : [
@@ -2902,8 +3175,8 @@
       "id" : "cond-htn-ephedra",
       "kind" : "caution",
       "left" : [
-        "condition:hypertension",
-        "condition:heartDisease"
+        "condition:heartDisease",
+        "condition:hypertension"
       ],
       "reason" : "麻黃含麻黃鹼，會升血壓、加快心跳。",
       "right" : [
@@ -2921,9 +3194,9 @@
       ],
       "reason" : "腎功能不好時這幾種礦物質排不掉，會累積。補充劑、含電解質的飲品都算。",
       "right" : [
+        "k",
         "mg",
-        "p",
-        "k"
+        "p"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Potassium、Magnesium、Phosphorus（腎功能不全者警語）",
@@ -2937,11 +3210,11 @@
       ],
       "reason" : "腎功能不好時蛋白質的代謝產物（尿素、肌酸酐）排不掉；慢性腎臟病常需要限制蛋白質，乳清、BCAA 這類補充劑的量會直接加上去。肌酸還會讓肌酸酐檢驗值上升，讓腎功能看起來更差。",
       "right" : [
-        "bcaa",
         "arginine",
+        "bcaa",
+        "creatine",
         "glutamine",
-        "protein",
-        "creatine"
+        "protein"
       ],
       "severity" : 1,
       "source" : "KDOQI 2020 慢性腎臟病營養臨床指引（非透析 CKD 3–5 期蛋白質 0.55–0.6 g/kg）；NIH ODS — Dietary Supplements for Exercise and Athletic Performance（creatine）",
@@ -3054,8 +3327,8 @@
       "reason" : "這些高劑量會再拉長凝血時間。請告訴醫師你在吃這些，手術或拔牙前先停。",
       "right" : [
         "ginkgo",
-        "vitE",
-        "omega3"
+        "omega3",
+        "vitE"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Omega-3、Vitamin E",
@@ -3137,8 +3410,8 @@
       "id" : "cond-preg-vita",
       "kind" : "caution",
       "left" : [
-        "condition:pregnant",
-        "condition:planningPregnancy"
+        "condition:planningPregnancy",
+        "condition:pregnant"
       ],
       "reason" : "既成維生素A 每日超過 3000 µg RE 與胎兒畸形有關。孕期需要的維生素A 從一般飲食和孕婦綜合維他命的劑量就夠；β-胡蘿蔔素不在此限。",
       "right" : [
@@ -3152,8 +3425,8 @@
       "id" : "cond-preg-isotretinoin",
       "kind" : "caution",
       "left" : [
-        "condition:pregnant",
-        "condition:planningPregnancy"
+        "condition:planningPregnancy",
+        "condition:pregnant"
       ],
       "reason" : "口服 A 酸（isotretinoin）致畸胎風險極高。備孕要先停藥，停藥後至少一個月才能懷孕；acitretin 停藥後要更久。請立刻跟皮膚科醫師確認。",
       "right" : [
@@ -3173,10 +3446,10 @@
       ],
       "reason" : "化療與放療部分是靠氧化壓力殺癌細胞，高劑量抗氧化補充劑（維生素C、E、硒、β-胡蘿蔔素、Q10）可能干擾療效，證據尚不一致。一般劑量的綜合維他命通常沒問題，高劑量請先問腫瘤科醫師。",
       "right" : [
-        "form:vitA.betaCarotene",
-        "vitC",
         "coq10",
+        "form:vitA.betaCarotene",
         "se",
+        "vitC",
         "vitE"
       ],
       "severity" : 1,
@@ -3245,5 +3518,5 @@
   ],
   "schema" : 2,
   "updatedAt" : "2026-09-07",
-  "version" : 6
+  "version" : 7
 }
