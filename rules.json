@@ -1408,6 +1408,216 @@
         "p"
       ],
       "zh" : "磷"
+    },
+    {
+      "aliases" : [
+        "估算腎絲球過濾率",
+        "腎絲球過濾率",
+        "腎絲球濾過率",
+        "egfr",
+        "e-gfr",
+        "gfr"
+      ],
+      "conditionHint" : {
+        "about" : "腎臟功能",
+        "condition" : "kidney",
+        "source" : "KDIGO 2012 慢性腎臟病指引（eGFR < 60 持續三個月以上）；國健署 慢性腎臟病健康管理手冊",
+        "when" : "low"
+      },
+      "en" : "eGFR",
+      "key" : "egfr",
+      "note" : "腎臟功能的指標。一次偏低不等於腎臟病，要看是不是持續三個月以上、有沒有蛋白尿。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+
+      ],
+      "zh" : "腎絲球過濾率（eGFR）"
+    },
+    {
+      "aliases" : [
+        "肌酸酐",
+        "肌酐",
+        "血清肌酸酐",
+        "creatinine",
+        "crea",
+        "cre",
+        "cr"
+      ],
+      "conditionHint" : {
+        "about" : "腎臟功能",
+        "condition" : "kidney",
+        "source" : "KDIGO 2012 慢性腎臟病指引；國健署 慢性腎臟病健康管理手冊",
+        "when" : "high"
+      },
+      "en" : "Creatinine",
+      "key" : "creatinine",
+      "note" : "偏高常見於腎臟功能下降，但肌肉量多、脫水、剛吃大量肉或補肌酸也會升。尿液肌酸酐是另一項，區間不同。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+
+      ],
+      "zh" : "肌酸酐"
+    },
+    {
+      "aliases" : [
+        "尿酸",
+        "uric acid",
+        "uricacid",
+        "ua"
+      ],
+      "conditionHint" : {
+        "about" : "尿酸代謝",
+        "condition" : "gout",
+        "source" : "中華民國風濕病醫學會 台灣痛風與高尿酸血症診治指引（2016）；ACR 2020 痛風治療指引",
+        "when" : "high"
+      },
+      "en" : "Uric acid",
+      "key" : "uricAcid",
+      "note" : "偏高不一定會痛風，但痛風的人尿酸幾乎都偏高。菸鹼酸、高劑量維生素C 會影響尿酸。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+
+      ],
+      "zh" : "尿酸"
+    },
+    {
+      "aliases" : [
+        "丙胺酸轉胺酶",
+        "麩丙酮酸轉胺酶",
+        "alanine aminotransferase",
+        "alt (sgpt)",
+        "alt(sgpt)",
+        "gpt (alt)",
+        "gpt(alt)",
+        "alt/gpt",
+        "gpt/alt",
+        "sgpt",
+        "s-gpt",
+        "alt",
+        "gpt"
+      ],
+      "conditionHint" : {
+        "about" : "肝臟",
+        "condition" : "liver",
+        "source" : "國健署 肝炎防治（ALT／AST 為肝細胞發炎指標）；ACG 2017 異常肝功能檢查臨床指引",
+        "when" : "high"
+      },
+      "en" : "ALT",
+      "key" : "alt",
+      "note" : "肝細胞發炎的指標。偏高的原因很多（脂肪肝、病毒性肝炎、藥物、酒），要由醫師判斷。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+
+      ],
+      "zh" : "ALT（GPT）"
+    },
+    {
+      "aliases" : [
+        "天門冬胺酸轉胺酶",
+        "麩草醋酸轉胺酶",
+        "aspartate aminotransferase",
+        "ast (sgot)",
+        "ast(sgot)",
+        "got (ast)",
+        "got(ast)",
+        "ast/got",
+        "got/ast",
+        "sgot",
+        "s-got",
+        "ast",
+        "got"
+      ],
+      "conditionHint" : {
+        "about" : "肝臟",
+        "condition" : "liver",
+        "source" : "國健署 肝炎防治；ACG 2017 異常肝功能檢查臨床指引",
+        "when" : "high"
+      },
+      "en" : "AST",
+      "key" : "ast",
+      "note" : "跟 ALT 一起看。AST 也存在肌肉與心臟，劇烈運動後會升。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+
+      ],
+      "zh" : "AST（GOT）"
+    },
+    {
+      "aliases" : [
+        "糖化血紅素",
+        "糖化血色素",
+        "glycated hemoglobin",
+        "glycohemoglobin",
+        "hba1c",
+        "hb a1c",
+        "a1c"
+      ],
+      "conditionHint" : {
+        "about" : "血糖",
+        "condition" : "diabetes",
+        "source" : "美國糖尿病學會 ADA 診斷標準（HbA1c ≥ 6.5%）；中華民國糖尿病學會 糖尿病臨床照護指引（2022）",
+        "when" : "high"
+      },
+      "en" : "HbA1c",
+      "key" : "hba1c",
+      "note" : "反映最近兩三個月的平均血糖。是不是糖尿病要由醫師依標準判定，不是超出報告區間就算。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+
+      ],
+      "zh" : "糖化血色素（HbA1c）"
+    },
+    {
+      "aliases" : [
+        "空腹血糖",
+        "飯前血糖",
+        "餐前血糖",
+        "fasting glucose",
+        "fasting blood sugar",
+        "fasting plasma glucose",
+        "glucose (ac)",
+        "glucose(ac)",
+        "glucose ac",
+        "glucose-ac",
+        "ac glucose",
+        "ac sugar",
+        "sugar (ac)",
+        "sugar ac",
+        "glu (ac)",
+        "glu(ac)",
+        "glu-ac",
+        "fbs",
+        "fpg",
+        "fbg"
+      ],
+      "conditionHint" : {
+        "about" : "血糖",
+        "condition" : "diabetes",
+        "source" : "美國糖尿病學會 ADA 診斷標準（空腹血糖 ≥ 126 mg/dL）；中華民國糖尿病學會 糖尿病臨床照護指引（2022）",
+        "when" : "high"
+      },
+      "en" : "Fasting glucose",
+      "key" : "fastingGlucose",
+      "note" : "只認空腹（AC）那一項；飯後血糖的區間不同，不對照。一次偏高不等於糖尿病。",
+      "nutrientsWhenHigh" : [
+
+      ],
+      "nutrientsWhenLow" : [
+
+      ],
+      "zh" : "空腹血糖"
     }
   ],
   "nutrients" : [
@@ -3518,5 +3728,5 @@
   ],
   "schema" : 2,
   "updatedAt" : "2026-09-07",
-  "version" : 7
+  "version" : 8
 }
