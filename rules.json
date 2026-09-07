@@ -921,6 +921,107 @@
       "label" : "雌激素／荷爾蒙補充"
     }
   ],
+  "exclusions" : [
+    {
+      "blocks" : [
+        "fe"
+      ],
+      "note" : "乳鐵蛋白是蛋白質，含鐵約 0.1%。100 mg 當成 100 mg 鐵會超過 40 mg 的 UL。",
+      "term" : "乳鐵蛋白"
+    },
+    {
+      "blocks" : [
+        "fe"
+      ],
+      "note" : "同「乳鐵蛋白」。",
+      "term" : "lactoferrin"
+    },
+    {
+      "blocks" : [
+        "p"
+      ],
+      "note" : "卵磷脂是磷脂質，不是無機磷；一顆 1200 mg 會被當成 1200 mg 磷。",
+      "term" : "卵磷脂"
+    },
+    {
+      "blocks" : [
+        "p"
+      ],
+      "note" : "同「卵磷脂」。",
+      "term" : "lecithin"
+    },
+    {
+      "blocks" : [
+        "p"
+      ],
+      "note" : "磷脂醯絲胺酸（PS）、磷脂醯膽鹼是磷脂質。膽鹼那部分照樣對得到膽鹼。",
+      "term" : "磷脂醯"
+    },
+    {
+      "blocks" : [
+        "p"
+      ],
+      "note" : "同「磷脂醯」。",
+      "term" : "phosphatidyl"
+    },
+    {
+      "blocks" : [
+        "p"
+      ],
+      "note" : "磷蝦油是 omega-3 來源，跟磷無關。",
+      "term" : "磷蝦"
+    },
+    {
+      "blocks" : [
+        "mg"
+      ],
+      "note" : "賦形劑。每顆幾毫克，鎂只佔一小部分，不該加進鎂的攝取量。",
+      "term" : "硬脂酸鎂"
+    },
+    {
+      "blocks" : [
+        "mg"
+      ],
+      "note" : "同「硬脂酸鎂」。",
+      "term" : "magnesiumstearate"
+    },
+    {
+      "blocks" : [
+        "ca"
+      ],
+      "note" : "賦形劑，同硬脂酸鎂。",
+      "term" : "硬脂酸鈣"
+    },
+    {
+      "blocks" : [
+        "ca"
+      ],
+      "note" : "同「硬脂酸鈣」。",
+      "term" : "calciumstearate"
+    },
+    {
+      "blocks" : [
+        "na"
+      ],
+      "note" : "玻尿酸鈉是關節、皮膚保健成分，鈉只是鹽的形式。",
+      "term" : "玻尿酸鈉"
+    },
+    {
+      "blocks" : [
+        "na"
+      ],
+      "note" : "同「玻尿酸鈉」。",
+      "term" : "sodiumhyaluronate"
+    },
+    {
+      "blocks" : [
+        "cu",
+        "na"
+      ],
+      "note" : "著色劑，不是銅或鈉的補充來源。",
+      "term" : "銅葉綠素鈉"
+    }
+  ],
   "forms" : [
     {
       "aliases" : [
@@ -1571,8 +1672,10 @@
         "碳酸鈣",
         "海藻鈣",
         "乳酸鈣",
+        "磷酸鈣",
         "calciumcitrate",
         "calciumcarbonate",
+        "calciumphosphate",
         "カルシウム",
         "칼슘"
       ],
@@ -2245,6 +2348,22 @@
     },
     {
       "aliases" : [
+        "乳鐵蛋白",
+        "乳鐵",
+        "lactoferrin",
+        "ラクトフェリン",
+        "락토페린"
+      ],
+      "en" : "Lactoferrin",
+      "key" : "lactoferrin",
+      "note" : "含鐵量極微（約 0.1%），不算進鐵的攝取量。沒有訂上限；常見添加量每日 100–300 mg。",
+      "ulScope" : "total",
+      "ulSource" : "none",
+      "unit" : "mg",
+      "zh" : "乳鐵蛋白"
+    },
+    {
+      "aliases" : [
         "聖約翰草",
         "金絲桃",
         "st.john'swort",
@@ -2443,9 +2562,9 @@
       ],
       "reason" : "這些礦物質會綁住甲狀腺素，讓藥效變差。藥通常早上空腹先吃，礦物質移到中午以後。",
       "right" : [
-        "mg",
         "ca",
-        "fe"
+        "fe",
+        "mg"
       ],
       "severity" : 2,
       "source" : "食藥署用藥安全／NIH ODS — Calcium",
@@ -2462,8 +2581,8 @@
       "right" : [
         "zn",
         "fe",
-        "ca",
-        "mg"
+        "mg",
+        "ca"
       ],
       "severity" : 2,
       "source" : "食藥署用藥安全／NIH ODS",
@@ -2494,8 +2613,8 @@
       "reason" : "雙磷酸鹽吸收極差，跟鈣鎂鐵一起幾乎吸收不到。早上空腹先吃藥，至少 30 分鐘後再吃別的。",
       "right" : [
         "ca",
-        "fe",
-        "mg"
+        "mg",
+        "fe"
       ],
       "severity" : 2,
       "source" : "藥品仿單（Fosamax 等）",
@@ -2523,9 +2642,9 @@
       ],
       "reason" : "這些都會再拉長凝血時間，高劑量時出血風險上升。請告訴醫師你在吃這些。",
       "right" : [
-        "omega3",
+        "ginkgo",
         "vitE",
-        "ginkgo"
+        "omega3"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Omega-3、Vitamin E",
@@ -2553,8 +2672,8 @@
       ],
       "reason" : "血清素疊加可能引發血清素症候群（心跳快、發抖、意識混亂）。這一條是「不要」，不是「分開」。先問身心科醫師。",
       "right" : [
-        "stjohnswort",
-        "5htp"
+        "5htp",
+        "stjohnswort"
       ],
       "severity" : 2,
       "source" : "NIH NCCIH — St. John's Wort",
@@ -2612,8 +2731,8 @@
       "reason" : "胃酸變少，這幾樣吸收都會變差。長期使用者補充是常見做法，定期檢驗比較安心。",
       "right" : [
         "ca",
-        "b12",
-        "mg"
+        "mg",
+        "b12"
       ],
       "severity" : 0,
       "source" : "FDA Drug Safety Communication（PPI 低血鎂）",
@@ -2728,8 +2847,8 @@
       ],
       "reason" : "排鉀型利尿劑會讓血鉀、血鎂流失，補充常是醫師開的；保鉀型則相反。哪一種、要不要補，以醫師為準。",
       "right" : [
-        "mg",
-        "k"
+        "k",
+        "mg"
       ],
       "severity" : 0,
       "source" : "NIH ODS — Potassium、Magnesium",
@@ -2743,8 +2862,8 @@
       ],
       "reason" : "類固醇長期使用會讓骨質流失，補鈣與維生素D 是常見的保護措施。劑量請問醫師。",
       "right" : [
-        "ca",
-        "vitD"
+        "vitD",
+        "ca"
       ],
       "severity" : 0,
       "source" : "NIH ODS — Calcium",
@@ -2783,8 +2902,8 @@
       "id" : "cond-htn-ephedra",
       "kind" : "caution",
       "left" : [
-        "condition:heartDisease",
-        "condition:hypertension"
+        "condition:hypertension",
+        "condition:heartDisease"
       ],
       "reason" : "麻黃含麻黃鹼，會升血壓、加快心跳。",
       "right" : [
@@ -2803,8 +2922,8 @@
       "reason" : "腎功能不好時這幾種礦物質排不掉，會累積。補充劑、含電解質的飲品都算。",
       "right" : [
         "mg",
-        "k",
-        "p"
+        "p",
+        "k"
       ],
       "severity" : 1,
       "source" : "NIH ODS — Potassium、Magnesium、Phosphorus（腎功能不全者警語）",
@@ -2818,11 +2937,11 @@
       ],
       "reason" : "腎功能不好時蛋白質的代謝產物（尿素、肌酸酐）排不掉；慢性腎臟病常需要限制蛋白質，乳清、BCAA 這類補充劑的量會直接加上去。肌酸還會讓肌酸酐檢驗值上升，讓腎功能看起來更差。",
       "right" : [
-        "arginine",
-        "creatine",
         "bcaa",
+        "arginine",
         "glutamine",
-        "protein"
+        "protein",
+        "creatine"
       ],
       "severity" : 1,
       "source" : "KDOQI 2020 慢性腎臟病營養臨床指引（非透析 CKD 3–5 期蛋白質 0.55–0.6 g/kg）；NIH ODS — Dietary Supplements for Exercise and Athletic Performance（creatine）",
@@ -2960,8 +3079,8 @@
       "id" : "cond-prostate-glaucoma-decongestant",
       "kind" : "caution",
       "left" : [
-        "condition:prostate",
-        "condition:glaucoma"
+        "condition:glaucoma",
+        "condition:prostate"
       ],
       "reason" : "偽麻黃鹼會讓攝護腺肥大者排尿更困難、青光眼者眼壓升高。",
       "right" : [
@@ -2993,8 +3112,8 @@
       ],
       "reason" : "跟抗憂鬱劑疊加可能引發血清素症候群。要吃先問身心科醫師。",
       "right" : [
-        "stjohnswort",
-        "5htp"
+        "5htp",
+        "stjohnswort"
       ],
       "severity" : 2,
       "source" : "NIH NCCIH — St. John's Wort",
@@ -3033,14 +3152,14 @@
       "id" : "cond-preg-isotretinoin",
       "kind" : "caution",
       "left" : [
-        "condition:planningPregnancy",
-        "condition:pregnant"
+        "condition:pregnant",
+        "condition:planningPregnancy"
       ],
       "reason" : "口服 A 酸（isotretinoin）致畸胎風險極高。備孕要先停藥，停藥後至少一個月才能懷孕；acitretin 停藥後要更久。請立刻跟皮膚科醫師確認。",
       "right" : [
+        "generic:ACITRETIN",
         "generic:ISOTRETINOIN",
-        "generic:TRETINOIN",
-        "generic:ACITRETIN"
+        "generic:TRETINOIN"
       ],
       "severity" : 2,
       "source" : "食藥署 口服 A 酸用藥安全資訊；FDA iPLEDGE",
@@ -3055,8 +3174,8 @@
       "reason" : "化療與放療部分是靠氧化壓力殺癌細胞，高劑量抗氧化補充劑（維生素C、E、硒、β-胡蘿蔔素、Q10）可能干擾療效，證據尚不一致。一般劑量的綜合維他命通常沒問題，高劑量請先問腫瘤科醫師。",
       "right" : [
         "form:vitA.betaCarotene",
-        "coq10",
         "vitC",
+        "coq10",
         "se",
         "vitE"
       ],
@@ -3069,8 +3188,8 @@
       "kind" : "caution",
       "left" : [
         "condition:cancer",
-        "condition:transplant",
-        "condition:epilepsy"
+        "condition:epilepsy",
+        "condition:transplant"
       ],
       "reason" : "聖約翰草會加速肝臟代謝（CYP3A4、P-gp），讓化療藥（irinotecan、imatinib）、抗排斥藥（ciclosporin、tacrolimus）、部分抗癲癇藥的血中濃度下降，有排斥與治療失敗的報告。",
       "right" : [
@@ -3126,5 +3245,5 @@
   ],
   "schema" : 2,
   "updatedAt" : "2026-09-07",
-  "version" : 5
+  "version" : 6
 }
