@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>保健櫃 HealthShelf — 隱私政策</title>
+<link rel="canonical" href="https://healthshelf.app/privacy/">
 <style>
   :root { color-scheme: light dark; }
   body { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
@@ -14,9 +15,28 @@
   .lede { border-left: 3px solid currentColor; padding-left: 1rem; }
   hr { border: 0; border-top: 1px solid #8884; margin: 3.5rem 0; }
   code { font-size: .9em; }
+  /* 舊網址的提示條。用半透明邊框而不是底色，深色模式才不會變成淺字配淺底 */
+  .moved { border: 1px solid #8884; border-radius: .6rem; padding: .8rem 1rem;
+           font-size: .92em; margin-bottom: 2rem; }
 </style>
 </head>
 <body>
+
+<!--
+  2026-09-10：保健櫃有自己的網域了，這份政策的正式版在 https://healthshelf.app/privacy/。
+
+  **這一頁刻意不做轉址，內容也留著。**
+  這個網址很可能已經填在 App Store Connect 裡，也可能在已經發出去的 build 內被連著。
+  直接轉址在商店審查時偶爾會被挑，內容消失更糟。做法是：先掛 canonical 與這條提示，
+  等 App Store Connect、Play Console 與 App 內「設定 → 關於」都換成新網址之後，
+  再把這一頁改成純轉址。改的時候兩份 privacy-policy.html（App repo 與 health-shelf-data）要一起改。
+
+  App 政策的內文與正式版一字不差；正式版多一節〈這個網站〉，講的是 healthshelf.app 這個網站
+  本身的埋點，跟 App 無關，所以這一頁沒有。
+-->
+<p class="moved">這份政策的正式網址已經移到
+<a href="https://healthshelf.app/privacy/">healthshelf.app/privacy/</a>。
+這一頁保留是為了讓舊連結繼續有效，App 政策的內容與正式版一字不差。有疑問請以正式版為準。</p>
 
 <h1>保健櫃（HealthShelf）隱私政策</h1>
 <p class="sub">最後更新：2026 年 9 月 5 日</p>
@@ -71,6 +91,11 @@ App 整份拿回手機再比對；請求不帶任何參數、沒有 cookie、沒
 或到 Threads 找官方小編：<a href="https://www.threads.com/@healthshelf.tw">@healthshelf.tw</a>。</p>
 
 <hr>
+
+<p class="moved">This policy has moved to
+<a href="https://healthshelf.app/privacy/">healthshelf.app/privacy/</a>.
+This page is kept so that existing links keep working; the app policy text is identical
+to the canonical version. Where they differ, the canonical version applies.</p>
 
 <h1>HealthShelf — Privacy Policy</h1>
 <p class="sub">Last updated: 5 September 2026</p>
