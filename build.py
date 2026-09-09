@@ -17,7 +17,7 @@ RAW = "https://raw.githubusercontent.com/tungzoe/health-shelf-data/main/"
 TODAY = datetime.date.today().isoformat()
 
 # 資料改了就 +1。schema 是格式版本，App 不認識的格式會整份略過。
-VERSIONS = {"drugs-tw": 1, "tcm-formulas": 1, "herb-drug-tw": 1, "tcm-products": 1}
+VERSIONS = {"drugs-tw": 2, "tcm-formulas": 1, "herb-drug-tw": 1, "tcm-products": 1}
 
 
 def dump(name, obj):
@@ -32,8 +32,12 @@ def dump(name, obj):
 # ---------------------------------------------------------------- 西藥許可證
 
 # 主成分字串裡不算「藥名」的字：鹽類、離子、前綴。token 取第一個不在這裡面的字。
+# 劑型與賦形劑也算：有些許可證把「CAPSULE SHELL」「MAGNESIUM STEARATE」「COATED ASCORBIC ACID」列在成分裡，
+# 藥單上的「ACETIN CAPSULE」「ILOSONE STEARATE FILM COATED」會靠這些字配到不相干的藥（2026-09-09，啟忠診所藥單）。
 STOP = {"SODIUM", "POTASSIUM", "CALCIUM", "MAGNESIUM", "SILVER", "ZINC", "FERROUS", "FERRIC",
-        "ALUMINUM", "ALUMINIUM", "DL", "D", "L", "ANHYDROUS", "MONOHYDRATE", "DIHYDRATE"}
+        "ALUMINUM", "ALUMINIUM", "DL", "D", "L", "ANHYDROUS", "MONOHYDRATE", "DIHYDRATE",
+        "CAPSULE", "CAPSULES", "SHELL", "TABLET", "TABLETS", "FILM", "COATED", "COATING", "STEARATE", "POWDER",
+        "EXTRACT", "WATER", "ALCOHOL", "GLYCOL", "GELATIN", "CELLULOSE", "COMPOUND", "MICRONIZED", "HYDRATE"}
 
 
 def generic_tokens(g):
@@ -118,7 +122,7 @@ def build_drugs():
     obj = {"schema": 1, "version": VERSIONS["drugs-tw"], "updatedAt": TODAY,
            "source": "衛生福利部食品藥物管理署 全部藥品許可證資料集（data.fda.gov.tw 資料集 36）",
            "license": "政府資料開放授權條款",
-           "note": "只留有效許可證的製劑；已排除註銷、原料藥、體外診斷試劑、衛生材料。t 是比對用的學名字、nb 是中文品名去掉廠牌與劑型後的名字。",
+           "note": "只留有效許可證的製劑；已排除註銷、原料藥、體外診斷試劑、衛生材料。t 是比對用的學名字（去鹽類、劑型、賦形劑）、nb 是中文品名去掉廠牌與劑型後的名字。",
            "records": records}
     dump("drugs-tw.json", obj)
     return records
