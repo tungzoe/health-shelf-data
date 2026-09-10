@@ -11,6 +11,7 @@
          font: 16px/1.75 -apple-system, "Helvetica Neue", "PingFang TC", sans-serif; }
   h1 { font-size: 1.6rem; margin-bottom: .25rem; }
   h2 { font-size: 1.15rem; margin-top: 2.5rem; }
+  h3 { font-size: 1rem; margin-top: 1.5rem; }
   .sub { color: #888; margin-top: 0; }
   .lede { border-left: 3px solid currentColor; padding-left: 1rem; }
   hr { border: 0; border-top: 1px solid #8884; margin: 3.5rem 0; }
@@ -39,23 +40,27 @@
 這一頁保留是為了讓舊連結繼續有效，App 政策的內容與正式版一字不差。有疑問請以正式版為準。</p>
 
 <h1>保健櫃（HealthShelf）隱私政策</h1>
-<p class="sub">最後更新：2026 年 9 月 5 日</p>
+<p class="sub">最後更新：2026 年 9 月 10 日</p>
 
-<p class="lede"><strong>保健櫃不收集你的任何資料。</strong>這個 App 沒有伺服器、沒有帳號、沒有雲端。
-你輸入的所有東西都只存在你自己的 iPhone 上，不會被上傳到任何地方。</p>
+<p class="lede"><strong>保健櫃不收集你的任何資料。</strong>這個 App（iOS 與 Android 都一樣）沒有伺服器、沒有帳號、沒有雲端。
+你輸入的所有東西都只存在你自己的手機上，不會被上傳到任何地方。</p>
 
 <p>保健櫃唯一的網路連線是<strong>下載公開資料</strong>：食藥署的藥品許可證資料集、衛福部中醫藥司的中藥基準方與中藥許可證、
 衛福部的中西藥交互作用資料庫，以及 App 自己的對照表（營養素上限、藥物類別、搭配規則）更新。這些檔放在一個固定的公開網址，
-App 整份拿回手機再比對；請求不帶任何參數、沒有 cookie、沒有帳號，對方只看得到「有一支 iPhone 來拿過這些檔」。
+App 整份拿回手機再比對；請求不帶任何參數、沒有 cookie、沒有帳號，對方只看得到「有一支手機來拿過這些檔」。
 <strong>不會把你的藥名、成分、紀錄或照片送出去</strong>，連當作查詢條件都不會。設定裡可以把這個連線關掉，關掉後 App 完全不連網，
 用內建的那一份資料照常運作。這條承諾改變時，這份政策會先更新。</p>
 
 <h2>資料存在哪裡</h2>
-<p>保健品與藥品資料、服用紀錄、身體反應、照片、花費、健檢報告的數值，全部存在你 iPhone 上 App 自己的沙箱裡。
-健檢報告只存你確認過的項目、數值與參考區間，不存照片或原文。
+<p>保健品與藥品資料、服用紀錄、身體反應、照片、花費、健檢報告的數值，全部存在你手機上 App 自己的儲存空間裡
+（iOS 的沙箱或 Android 的 App 專屬儲存）。健檢報告只存你確認過的項目、數值與參考區間，不存照片或原文。
 開發者看不到，也沒有任何管道可以看到。</p>
 
 <h2>App 用到的權限</h2>
+<p>iOS 與 Android 版都遵守同一條原則：<strong>辨識與運算都在你的手機上進行</strong>，圖片與文字不會被送出去。
+以下依平台列出各自用到的權限。</p>
+
+<h3>iOS</h3>
 <ul>
   <li><strong>相機</strong>：掃描藥袋、包裝或健檢報告上的文字。辨識用 iPhone 內建的 Vision 框架，
       <strong>完全在裝置上進行</strong>，照片與文字都不會離開手機。</li>
@@ -66,16 +71,32 @@ App 整份拿回手機再比對；請求不帶任何參數、沒有 cookie、沒
   <li><strong>通知</strong>：服藥提醒是 iPhone 的本機通知，不經過任何伺服器。</li>
 </ul>
 
+<h3>Android</h3>
+<ul>
+  <li><strong>相機</strong>：掃描藥袋、包裝或健檢報告上的文字。辨識用 Google ML Kit 文字辨識，模型
+      <strong>包在 App 裡、在裝置上執行</strong>，照片與文字都不會離開手機。</li>
+  <li><strong>相簿</strong>：透過系統相簿選擇器選一張照片，不需要另外要相簿權限，同樣只在本機處理。</li>
+  <li><strong>照片去背</strong>：新增產品照片時，App 用 Google Play 服務的 ML Kit 主體分割功能幫照片去背。
+      這個模型不包在 App 裡，<strong>第一次使用時由你手機上的 Google Play 服務下載</strong>；
+      去背運算仍在你的手機上進行，<strong>照片本身不會離開手機</strong>。</li>
+  <li><strong>通知、精確鬧鐘、開機完成</strong>：服藥提醒用 Android 系統的鬧鐘在本機排程。
+      這三個權限只用來讓提醒能準時響、手機重開機後重新排好，不涉及任何資料傳輸。</li>
+</ul>
+<p>Health Connect（Android 版對應 iOS 健康 App 的整合）目前還沒做；之後加入時一樣只會<strong>寫出、不讀取</strong>，
+且會先更新這份政策。</p>
+
 <h2>備份</h2>
 <p>你可以自己匯出一份備份檔。備份是你主動按下去才產生的，會用你設定的密碼加密
-（PBKDF2 + AES-GCM，Apple 系統框架）。密碼不會存在任何地方，開發者也無法解開。
-檔案要放哪裡（iCloud 雲碟、AirDrop、其他）由你決定，保健櫃不會自動上傳到任何地方。</p>
+（PBKDF2-SHA256 + AES-256-GCM）。iOS 用 Apple 系統框架、Android 用 Java 標準函式庫（javax.crypto）實作，
+演算法與參數相同，<strong>兩邊的備份檔可以互相還原</strong>。密碼不會存在任何地方，開發者也無法解開。
+檔案要放哪裡（iCloud 雲碟、下載資料夾、其他）由你決定，保健櫃不會自動上傳到任何地方。</p>
 
 <h2>沒有的東西</h2>
 <ul>
   <li>沒有分析、統計或使用行為追蹤</li>
   <li>沒有廣告，沒有廣告識別碼</li>
-  <li>沒有第三方 SDK</li>
+  <li>沒有第三方 SDK（Android 版用到的 Google ML Kit／Play 服務屬於作業系統層級的官方元件，不是第三方 SDK；
+      ML Kit 內建想回報使用統計給 Google 的功能已在 App 裡拿掉）</li>
   <li>不會把資料賣給、或分享給任何人</li>
 </ul>
 
@@ -98,27 +119,31 @@ This page is kept so that existing links keep working; the app policy text is id
 to the canonical version. Where they differ, the canonical version applies.</p>
 
 <h1>HealthShelf — Privacy Policy</h1>
-<p class="sub">Last updated: 5 September 2026</p>
+<p class="sub">Last updated: 10 September 2026</p>
 
-<p class="lede"><strong>HealthShelf collects no data.</strong> The app has no server, no account,
-and no cloud component. Everything you enter stays on your own iPhone and is never uploaded.</p>
+<p class="lede"><strong>HealthShelf collects no data.</strong> The app (iOS and Android alike) has no server,
+no account, and no cloud component. Everything you enter stays on your own phone and is never uploaded.</p>
 
 <p>HealthShelf's only network activity is <strong>downloading public data</strong>: the Taiwan FDA drug licence
 dataset, the Ministry of Health and Welfare's Traditional Chinese Medicine formularies and licences, its herb–drug
 interaction database, and updates to the app's own reference tables (nutrient limits, drug classes, pairing rules).
 These files live at a fixed public URL; the app fetches them whole and matches on your phone. Requests carry no
-parameters, no cookies and no account, so the host only sees that an iPhone fetched the files.
+parameters, no cookies and no account, so the host only sees that a phone fetched the files.
 <strong>Your medication names, ingredients, logs and photos are never sent out</strong>, not even as a search query.
 You can switch this connection off in Settings; the app then works entirely offline from its bundled copy.
 This policy will be updated before that promise ever changes.</p>
 
 <h2>Where your data lives</h2>
 <p>Your supplements and medications, intake logs, body reactions, photos, spending records and lab-report values are
-stored only in the app's own sandbox on your iPhone. For lab reports the app keeps only the items, values and
-reference ranges you confirmed — never the photo or the raw text. The developer cannot see any of it,
-and has no mechanism to.</p>
+stored only in the app's own storage on your phone (the iOS sandbox, or Android's app-private storage). For lab
+reports the app keeps only the items, values and reference ranges you confirmed — never the photo or the raw text.
+The developer cannot see any of it, and has no mechanism to.</p>
 
 <h2>Permissions</h2>
+<p>Both the iOS and Android apps follow the same rule: <strong>recognition and processing all happen on your
+phone</strong>; images and text are never sent anywhere. Permissions differ by platform:</p>
+
+<h3>iOS</h3>
 <ul>
   <li><strong>Camera</strong> — to scan text on medication bags, product packaging and lab reports. Recognition uses
       Apple's on-device Vision framework; neither the images nor the text ever leave your phone.</li>
@@ -130,17 +155,38 @@ and has no mechanism to.</p>
   <li><strong>Notifications</strong> — medication reminders are local iOS notifications. No server is involved.</li>
 </ul>
 
+<h3>Android</h3>
+<ul>
+  <li><strong>Camera</strong> — to scan text on medication bags, packaging and lab reports. Recognition uses
+      Google ML Kit Text Recognition; the model is <strong>bundled with the app and runs on device</strong>,
+      so images and text never leave your phone.</li>
+  <li><strong>Photos</strong> — picked through the system photo picker, which needs no separate photo-library
+      permission. Processed entirely on device.</li>
+  <li><strong>Background removal</strong> — when you add a product photo, the app uses ML Kit Subject Segmentation
+      via Google Play services to remove the background. This model is not bundled with the app and is
+      <strong>downloaded by Google Play services on first use</strong>; the processing still happens on your
+      phone, and <strong>the photo itself is never sent anywhere</strong>.</li>
+  <li><strong>Notifications, exact alarms, boot completed</strong> — medication reminders are scheduled locally
+      using Android's alarm system. These three permissions only make reminders fire on time and get rescheduled
+      after a restart; none of them involve sending data anywhere.</li>
+</ul>
+<p>Health Connect (the Android counterpart to iOS Health integration) is not implemented yet. When it is added,
+it will only ever write data, never read it, and this policy will be updated first.</p>
+
 <h2>Backups</h2>
 <p>You can export a backup file yourself. Backups are created only when you choose to, and are
-encrypted with a password you set (PBKDF2 + AES-GCM, using Apple system frameworks). The password
-is never stored anywhere and the developer cannot decrypt your backup. Where the file goes
-(iCloud Drive, AirDrop, elsewhere) is entirely your choice; HealthShelf never uploads it anywhere.</p>
+encrypted with a password you set (PBKDF2-SHA256 + AES-256-GCM). iOS uses Apple's system frameworks and Android
+uses Java's standard crypto library (javax.crypto) with the same algorithm and parameters, so
+<strong>backup files are interchangeable between the two apps</strong>. The password is never stored anywhere
+and the developer cannot decrypt your backup. Where the file goes (iCloud Drive, Downloads, elsewhere) is
+entirely your choice; HealthShelf never uploads it anywhere.</p>
 
 <h2>What the app does not do</h2>
 <ul>
   <li>No analytics or usage tracking</li>
   <li>No advertising and no advertising identifiers</li>
-  <li>No third-party SDKs</li>
+  <li>No third-party SDKs (on Android, Google ML Kit / Play services are OS-level official components, not a
+      third-party SDK; ML Kit's built-in usage-reporting component has been removed from the app)</li>
   <li>Your data is never sold or shared with anyone</li>
 </ul>
 
