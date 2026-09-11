@@ -9,7 +9,7 @@
 資料集格式全部是 {"schema": 1, "version": n, "updatedAt": "...", "source": "...", "license": "...", ...內容}。
 App 只認 kind，同 kind 的新資料集或新版本不用重 build。
 """
-import json, re, os, hashlib, datetime
+import json, re, os, sys, hashlib, datetime, base64
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 WORK = os.path.join(ROOT, "work")
@@ -391,11 +391,60 @@ def build_manifest():
                          "updatedAt": obj.get("updatedAt", ""), "url": RAW + name + ".json",
                          "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest(),
                          "source": obj.get("source", "")})
-    dump("manifest.json", {"schema": 1, "generatedAt": TODAY, "datasets": datasets})
+    path = dump("manifest.json", {"schema": 1, "generatedAt": TODAY, "datasets": datasets})
+    sign_manifest(path)
+
+
+# ---------------------------------------------------------------- 簽章
+# manifest.json 用 Ed25519 簽成 manifest.json.sig（base64 一行），App 內建公鑰，簽章對不上就整份不套。
+# 為什麼要簽：sha256 跟 manifest 放在同一個 repo，只驗 sha256 等於只信 GitHub 帳號；
+# 帳號被盜或 token 外洩就能改 App 吃進去的營養素上限與交互作用建議。簽章私鑰只在開發機，不在任何 repo。
+# 私鑰弄丟要重產一把、把新公鑰放進 App 的 DataUpdater.manifestPublicKey，等於要出新 build——請備份到密碼管理器。
+# （iOS 2026-09-11 起驗簽；build 14 以前的 App 不看 .sig，照舊只驗 sha256。）
+KEY_PATH = os.path.expanduser("~/.healthshelf/manifest-signing.pem")
+
+
+def _load_key():
+    from cryptography.hazmat.primitives import serialization
+    if not os.path.exists(KEY_PATH):
+        sys.exit(f"缺簽章私鑰 {KEY_PATH}。沒簽章的 manifest 新版 App 不會吃，不要推上去。第一次用：python3 build.py --keygen")
+    return serialization.load_pem_private_key(open(KEY_PATH, "rb").read(), password=None)
+
+
+def public_key_b64(key):
+    from cryptography.hazmat.primitives import serialization
+    return base64.b64encode(key.public_key().public_bytes(serialization.Encoding.Raw, serialization.PublicFormat.Raw)).decode()
+
+
+def sign_manifest(path):
+    key = _load_key()
+    sig = key.sign(open(path, "rb").read())
+    with open(path + ".sig", "w") as f:
+        f.write(base64.b64encode(sig).decode() + "\n")
+    print(f"manifest.json.sig 簽好（公鑰 {public_key_b64(key)}，要跟 App 的 DataUpdater.manifestPublicKey 一樣）")
+
+
+def keygen():
+    from cryptography.hazmat.primitives import serialization
+    from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PrivateKey
+    if os.path.exists(KEY_PATH):
+        sys.exit(f"{KEY_PATH} 已經有了，不覆蓋。真的要換金鑰就先把舊的移走，然後 App 也要換公鑰重出 build。")
+    os.makedirs(os.path.dirname(KEY_PATH), mode=0o700, exist_ok=True)
+    key = Ed25519PrivateKey.generate()
+    with open(KEY_PATH, "wb") as f:
+        f.write(key.private_bytes(serialization.Encoding.PEM, serialization.PrivateFormat.PKCS8, serialization.NoEncryption()))
+    os.chmod(KEY_PATH, 0o600)
+    print(f"私鑰寫到 {KEY_PATH}（請備份到密碼管理器）")
+    print(f"公鑰（貼進 App 的 DataUpdater.manifestPublicKey）：{public_key_b64(key)}")
 
 
 if __name__ == "__main__":
-    import sys
+    if "--keygen" in sys.argv:
+        keygen()
+        sys.exit(0)
+    if "--pubkey" in sys.argv:
+        print(public_key_b64(_load_key()))
+        sys.exit(0)
     if "--manifest-only" in sys.argv:
         build_manifest()
         sys.exit(0)
